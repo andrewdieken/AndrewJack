@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PSW-eO-oIL">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" userLabel="Login View Controller" customClass="ViewController" customModule="Chapman_Football" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,505 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="9dv-NZ-jHb">
+                                <rect key="frame" x="16" y="64" width="343" height="603"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chapman_football_logo_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="I2c-WU-6ao">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="G9j-5e-ejA"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2dz-wg-nUa" userLabel="Password Field">
+                                        <rect key="frame" x="0.0" y="300" width="343" height="75"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3HP-c3-Jqa">
+                                        <rect key="frame" x="0.0" y="375" width="343" height="228"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Login"/>
+                                        <connections>
+                                            <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="H1R-b1-vK9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="9dv-NZ-jHb" secondAttribute="bottom" id="0ig-cl-wbL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="9dv-NZ-jHb" secondAttribute="trailing" id="6yd-iN-zcN"/>
+                            <constraint firstItem="9dv-NZ-jHb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Epl-ty-8IY"/>
+                            <constraint firstItem="9dv-NZ-jHb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="jgt-Hr-MhI"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="5vq-wC-DPS"/>
+                    <connections>
+                        <outlet property="passwordField" destination="2dz-wg-nUa" id="Fp9-eQ-czF"/>
+                        <segue destination="EKt-jU-anN" kind="modal" identifier="Homepage" id="ASF-ai-R6e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="863" y="-544"/>
+        </scene>
+        <!--Homepage View Controller-->
+        <scene sceneID="Mxr-Yc-zhf">
+            <objects>
+                <viewController id="EKt-jU-anN" customClass="HomepageViewController" customModule="Chapman_Football" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hMx-KH-osE"/>
+                        <viewControllerLayoutGuide type="bottom" id="2n5-k0-Cnq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0Pi-Hd-gDA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3yH-5E-5zS">
+                                <rect key="frame" x="16" y="20" width="343" height="647"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USl-6J-QuM">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="183"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chapman_football_logo_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="rcj-Ls-p5o">
+                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="183"/>
+                                            </imageView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OiR-rs-iK8">
+                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="183"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Squat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozK-1H-VZC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="30.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" placeholder="Enter max" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YP8-km-09C">
+                                                        <rect key="frame" x="0.0" y="30.5" width="171.5" height="30.5"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bench" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sR-y4-lM0">
+                                                        <rect key="frame" x="0.0" y="61" width="171.5" height="30.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" placeholder="Enter max" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rxr-eo-cdg">
+                                                        <rect key="frame" x="0.0" y="91.5" width="171.5" height="30.5"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clean" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhc-Rt-Bu6">
+                                                        <rect key="frame" x="0.0" y="122" width="171.5" height="31"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" placeholder="Enter max" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rmb-mW-m3e">
+                                                        <rect key="frame" x="0.0" y="153" width="171.5" height="30"/>
+                                                        <nil key="textColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="8sR-y4-lM0" firstAttribute="height" secondItem="ozK-1H-VZC" secondAttribute="height" id="Jb2-t4-8DD"/>
+                                                    <constraint firstItem="uhc-Rt-Bu6" firstAttribute="height" secondItem="ozK-1H-VZC" secondAttribute="height" id="brW-ez-2D8"/>
+                                                    <constraint firstItem="Rxr-eo-cdg" firstAttribute="height" secondItem="ozK-1H-VZC" secondAttribute="height" id="fU7-Vr-nnH"/>
+                                                    <constraint firstItem="Rmb-mW-m3e" firstAttribute="height" secondItem="ozK-1H-VZC" secondAttribute="height" id="oqa-wb-jzz"/>
+                                                    <constraint firstItem="YP8-km-09C" firstAttribute="height" secondItem="ozK-1H-VZC" secondAttribute="height" id="tqI-oZ-UUT"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="OiR-rs-iK8" firstAttribute="width" secondItem="rcj-Ls-p5o" secondAttribute="width" id="QKV-oo-OKf"/>
+                                        </constraints>
+                                    </stackView>
+                                    <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vve-Dk-MgI">
+                                        <rect key="frame" x="0.0" y="183" width="343" height="414"/>
+                                    </pickerView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJo-mo-4B1">
+                                        <rect key="frame" x="0.0" y="597" width="343" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="a27-1R-j6a"/>
+                                        </constraints>
+                                        <state key="normal" title="SELECT"/>
+                                        <connections>
+                                            <action selector="selectButton:" destination="EKt-jU-anN" eventType="touchUpInside" id="nvI-hn-30o"/>
+                                            <segue destination="RkW-kc-nYM" kind="show" id="hJs-pf-YOp"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3yH-5E-5zS" firstAttribute="top" secondItem="hMx-KH-osE" secondAttribute="bottom" id="8UK-Ix-sU2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3yH-5E-5zS" secondAttribute="trailing" id="YGZ-mp-Djg"/>
+                            <constraint firstItem="3yH-5E-5zS" firstAttribute="leading" secondItem="0Pi-Hd-gDA" secondAttribute="leadingMargin" id="koi-yo-AU7"/>
+                            <constraint firstItem="2n5-k0-Cnq" firstAttribute="top" secondItem="3yH-5E-5zS" secondAttribute="bottom" id="vid-4r-ZHz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="benchInput" destination="Rxr-eo-cdg" id="Yhy-X3-Olw"/>
+                        <outlet property="cleanInput" destination="Rmb-mW-m3e" id="dOI-Q6-hPP"/>
+                        <outlet property="pickerView" destination="Vve-Dk-MgI" id="uP0-xO-sgD"/>
+                        <outlet property="squatInput" destination="YP8-km-09C" id="Kwu-xX-N2c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GDo-zB-1xT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1550" y="-544"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="4fb-yW-IJZ">
+            <objects>
+                <tabBarController id="RkW-kc-nYM" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8G5-Gq-M06"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="WIH-qN-Lqu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="xZP-aV-pwC" kind="relationship" relationship="viewControllers" id="j99-6g-1ac"/>
+                        <segue destination="pFn-Q7-A4x" kind="relationship" relationship="viewControllers" id="7pv-8d-dTw"/>
+                        <segue destination="ahR-Q7-3FL" kind="relationship" relationship="viewControllers" id="u6P-xg-9LO"/>
+                        <segue destination="XUV-Eq-3HG" kind="relationship" relationship="viewControllers" id="YyP-FB-HdW"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pF7-jz-63T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2290" y="-544"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="EQi-kK-Jkt">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PSW-eO-oIL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PYb-N6-8aG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="c4z-23-rap"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yfq-iL-arI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="133.59999999999999" y="-543.77811094452773"/>
+        </scene>
+        <!--L1Collection-->
+        <scene sceneID="1tg-hc-l5C">
+            <objects>
+                <collectionViewController title="Collection" automaticallyAdjustsScrollViewInsets="NO" id="UJd-mK-bmo" userLabel="L1Collection" customClass="L1CustomCollectionViewController" customModule="Chapman_Football" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" directionalLockEnabled="YES" dataMode="prototypes" id="ctK-tx-sM6">
+                        <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                        <collectionViewLayout key="collectionViewLayout" id="erp-6E-Elg" customClass="L1CustomCollectionViewLayout" customModule="Chapman_Football" customModuleProvider="target"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customCell" id="sMF-tF-rfm" customClass="L1CustomCollectionViewCell" customModule="Chapman_Football" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sec 0 / Item 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="92" translatesAutoresizingMaskIntoConstraints="NO" id="DFA-o0-T0R">
+                                            <rect key="frame" x="12" y="8" width="77" height="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="DFA-o0-T0R" secondAttribute="centerX" id="2yc-kK-izG"/>
+                                    <constraint firstAttribute="centerY" secondItem="DFA-o0-T0R" secondAttribute="centerY" constant="0.5" id="Z0k-4s-FI2"/>
+                                </constraints>
+                                <size key="customSize" width="100" height="30"/>
+                                <connections>
+                                    <outlet property="label" destination="DFA-o0-T0R" id="obZ-KW-gTY"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="UJd-mK-bmo" id="UoW-PV-myj"/>
+                            <outlet property="delegate" destination="UJd-mK-bmo" id="7lz-nw-6Wf"/>
+                        </connections>
+                    </collectionView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Lower Body I" id="7ac-f6-Ffz">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="DEi-j5-Ad4">
+                            <connections>
+                                <segue destination="EKt-jU-anN" kind="presentation" id="UMR-QG-8GA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EJ0-7A-ulT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4324" y="-1630"/>
+        </scene>
+        <!--Lowerbody I Navigation Controller-->
+        <scene sceneID="uFc-e1-8Rn">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xZP-aV-pwC" userLabel="Lowerbody I Navigation Controller" customClass="L1UINavigationViewController" customModule="Chapman_Football" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="LOWERBODY I" id="x9t-7w-J9k"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="VOh-li-uVa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="UJd-mK-bmo" kind="relationship" relationship="rootViewController" id="8Rj-h3-HBU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="buC-la-05R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3510" y="-1630"/>
+        </scene>
+        <!--U1Collection-->
+        <scene sceneID="PKY-1C-2wh">
+            <objects>
+                <collectionViewController title="Collection" automaticallyAdjustsScrollViewInsets="NO" id="5FT-4n-GUh" userLabel="U1Collection" customClass="U1CustomCollectionViewController" customModule="Chapman_Football" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" directionalLockEnabled="YES" dataMode="prototypes" id="V4K-zO-q5l">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                        <collectionViewLayout key="collectionViewLayout" id="ZtW-c9-SqN" customClass="L1CustomCollectionViewLayout" customModule="Chapman_Football" customModuleProvider="target"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customCell" id="tB8-cX-Ha6" customClass="L1CustomCollectionViewCell" customModule="Chapman_Football" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sec 0 / Item 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="92" translatesAutoresizingMaskIntoConstraints="NO" id="L9L-DA-dx5">
+                                            <rect key="frame" x="12" y="8" width="77" height="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="L9L-DA-dx5" secondAttribute="centerY" constant="0.5" id="DdR-oc-mWZ"/>
+                                    <constraint firstAttribute="centerX" secondItem="L9L-DA-dx5" secondAttribute="centerX" id="Y6A-RH-n5X"/>
+                                </constraints>
+                                <size key="customSize" width="100" height="30"/>
+                                <connections>
+                                    <outlet property="label" destination="L9L-DA-dx5" id="toh-Sa-1tc"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="5FT-4n-GUh" id="wqH-qv-G8r"/>
+                            <outlet property="delegate" destination="5FT-4n-GUh" id="KVz-bQ-Vby"/>
+                        </connections>
+                    </collectionView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Upper Body I" id="2vn-El-A1I">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="ICz-mf-aS1">
+                            <connections>
+                                <segue destination="EKt-jU-anN" kind="presentation" id="BKc-4U-23u"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0cs-wg-L5F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4324" y="-923"/>
+        </scene>
+        <!--Upperbody I Navigation Controller-->
+        <scene sceneID="bSn-VD-438">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="pFn-Q7-A4x" userLabel="Upperbody I Navigation Controller" customClass="L1UINavigationViewController" customModule="Chapman_Football" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="UPPERBODY I" id="Ga0-yz-K6d"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="bqY-xp-2Ol">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="5FT-4n-GUh" kind="relationship" relationship="rootViewController" id="GAn-BT-vS4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XeX-SQ-owy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3510" y="-923"/>
+        </scene>
+        <!--L2Collection-->
+        <scene sceneID="RQd-0S-I8R">
+            <objects>
+                <collectionViewController title="Collection" automaticallyAdjustsScrollViewInsets="NO" id="Dd5-8C-X7x" userLabel="L2Collection" customClass="L2CustomCollectionViewController" customModule="Chapman_Football" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" directionalLockEnabled="YES" dataMode="prototypes" id="O7z-1C-weA">
+                        <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                        <collectionViewLayout key="collectionViewLayout" id="i2B-jG-F6a" customClass="L1CustomCollectionViewLayout" customModule="Chapman_Football" customModuleProvider="target"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customCell" id="QZX-jt-Okm" customClass="L1CustomCollectionViewCell" customModule="Chapman_Football" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sec 0 / Item 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="92" translatesAutoresizingMaskIntoConstraints="NO" id="ANc-Ju-YK5">
+                                            <rect key="frame" x="12" y="8" width="77" height="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerX" secondItem="ANc-Ju-YK5" secondAttribute="centerX" id="oQk-6s-Ltc"/>
+                                    <constraint firstAttribute="centerY" secondItem="ANc-Ju-YK5" secondAttribute="centerY" constant="0.5" id="up1-ar-afD"/>
+                                </constraints>
+                                <size key="customSize" width="100" height="30"/>
+                                <connections>
+                                    <outlet property="label" destination="ANc-Ju-YK5" id="j1e-u6-vuQ"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="Dd5-8C-X7x" id="63j-Lo-A4b"/>
+                            <outlet property="delegate" destination="Dd5-8C-X7x" id="496-Hl-RlP"/>
+                        </connections>
+                    </collectionView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Lower Body II" id="xAz-P7-88F">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="EzU-3C-x2T">
+                            <connections>
+                                <segue destination="EKt-jU-anN" kind="presentation" id="8Gh-0e-xg5"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8HL-Zn-nx3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4324" y="-243"/>
+        </scene>
+        <!--LOWERBODY II-->
+        <scene sceneID="JGc-GP-meb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ahR-Q7-3FL" customClass="L1UINavigationViewController" customModule="Chapman_Football" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="LOWERBODY II" id="dWs-Cd-t8d"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="TDB-Cs-NCL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Dd5-8C-X7x" kind="relationship" relationship="rootViewController" id="FHm-3p-PcE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EbK-xV-IOW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3510" y="-243"/>
+        </scene>
+        <!--U2Collection-->
+        <scene sceneID="diB-2G-e4c">
+            <objects>
+                <collectionViewController title="Collection" automaticallyAdjustsScrollViewInsets="NO" id="yaH-9t-KW6" userLabel="U2Collection" customClass="U2CustomCollectionViewController" customModule="Chapman_Football" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" directionalLockEnabled="YES" dataMode="prototypes" id="eib-9R-iAp">
+                        <rect key="frame" x="0.0" y="64" width="375" height="559"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <inset key="scrollIndicatorInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
+                        <collectionViewLayout key="collectionViewLayout" id="EJU-tO-CYG" customClass="L1CustomCollectionViewLayout" customModule="Chapman_Football" customModuleProvider="target"/>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="customCell" id="K3k-C6-Zin" customClass="L1CustomCollectionViewCell" customModule="Chapman_Football" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="30"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sec 0 / Item 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="92" translatesAutoresizingMaskIntoConstraints="NO" id="KbQ-EL-Jk7">
+                                            <rect key="frame" x="12" y="8" width="77" height="14"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="KbQ-EL-Jk7" secondAttribute="centerY" constant="0.5" id="6jJ-5j-s9y"/>
+                                    <constraint firstAttribute="centerX" secondItem="KbQ-EL-Jk7" secondAttribute="centerX" id="dLz-Hs-chq"/>
+                                </constraints>
+                                <size key="customSize" width="100" height="30"/>
+                                <connections>
+                                    <outlet property="label" destination="KbQ-EL-Jk7" id="bOh-Pr-hq4"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="yaH-9t-KW6" id="kYt-3V-QkF"/>
+                            <outlet property="delegate" destination="yaH-9t-KW6" id="Bgb-jl-lM3"/>
+                        </connections>
+                    </collectionView>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Upper Body II" id="25a-gi-rYC">
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="Tds-1n-EN3">
+                            <connections>
+                                <segue destination="EKt-jU-anN" kind="presentation" id="ed4-R9-Wk4"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f1E-0W-ogx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4324" y="450"/>
+        </scene>
+        <!--Upper Body II-->
+        <scene sceneID="6MT-MT-ro9">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XUV-Eq-3HG" userLabel="Upper Body II" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="UPPERBODY ll" id="7Ix-ah-Iaa"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QBx-Ph-bLl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yaH-9t-KW6" kind="relationship" relationship="rootViewController" id="XQ5-1g-aad"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ktH-EH-Dwu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3510" y="450"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chapman_football_logo_placeholder" width="174" height="175"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="ed4-R9-Wk4"/>
+    </inferredMetricsTieBreakers>
 </document>
