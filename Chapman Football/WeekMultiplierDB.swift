@@ -670,7 +670,7 @@ class WeekMultiplierDB {
             L1S5M = W11L1S5M
             L1S6M = W11L1S6M
             //
-            L2Exercise = W11L1Exercise
+            L1Exercise = W11L1Exercise
             
             U1S1M = W11U1S1M
             U1S2M = W11U1S2M

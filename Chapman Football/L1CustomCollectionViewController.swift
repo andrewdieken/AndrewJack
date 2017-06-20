@@ -34,12 +34,12 @@ class L1CustomCollectionViewController: UICollectionViewController {
                     cell.label.text = String(describing: list[i])
                 }
                 
-                if String(describing: list[i]) == "0.0" || String(describing: list[i]) == "" {
+                if String(describing: list[i]) == "0.0" {
                     cell.backgroundColor = UIColor.gray
                     cell.label.textColor = UIColor.gray
                 }
                 
-                if String(describing: list[i]) != "0.0" || String(describing: list[i]) == "" {
+                if String(describing: list[i]) != "0.0" {
                     cell.backgroundColor = UIColor.white
                     cell.label.textColor = UIColor.black
                 }
