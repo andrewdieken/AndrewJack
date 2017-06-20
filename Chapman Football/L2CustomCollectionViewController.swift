@@ -9,7 +9,7 @@ class L2CustomCollectionViewController: UICollectionViewController {
     
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         //#warning Incomplete method implementation -- Return the number of sections
-        return 12
+        return 13
     }
     
     
@@ -33,12 +33,12 @@ class L2CustomCollectionViewController: UICollectionViewController {
                     cell.label.text = String(describing: list[i])
                 }
                 
-                if String(describing: list[i]) == "0.0" {
+                if String(describing: list[i]) == "0.0" || String(describing: list[i]) == "" {
                     cell.backgroundColor = UIColor.gray
                     cell.label.textColor = UIColor.gray
                 }
                 
-                if String(describing: list[i]) != "0.0" {
+                if String(describing: list[i]) != "0.0" || String(describing: list[i]) == ""{
                     cell.backgroundColor = UIColor.white
                     cell.label.textColor = UIColor.black
                 }
@@ -52,6 +52,7 @@ class L2CustomCollectionViewController: UICollectionViewController {
                 }
                 
                 cell.label.text = String(describing: list[i])
+            
             }
         }
         
@@ -73,17 +74,19 @@ class L2CustomCollectionViewController: UICollectionViewController {
         if indexPath.item == 1 {
             let title = "Set 1"
             let CoR = "0.0"
-            let PHP = String(HomepageViewController.staticClean * w.L2S1[1]) + " x5"
-            let PC = String(HomepageViewController.staticClean * w.L2S1[2]) + " x5"
-            let SC = String(HomepageViewController.staticClean * w.L2S1[3]) + " x5"
-            let CC = String(HomepageViewController.staticClean * w.L2S1[4]) + " x3"
-            let Squat = String(HomepageViewController.staticSquat * w.L2S1[5]) + " x10"
-            let FSquat = String(HomepageViewController.staticSquat * w.L2S1[6]) + " x5"
-            let DBCJ = String(HomepageViewController.staticClean * w.L2S1[7]) + " x5"
-            let SL = "2 x10"
-            let OL = "2 x10"
+            let PHP = String(HomepageViewController.staticClean * w.L2S1[1]) + String(describing: w.L2S1M[1])
+            let PC = String(HomepageViewController.staticClean * w.L2S1[2]) + String(describing: w.L2S1M[2])
+            let SC = String(HomepageViewController.staticClean * w.L2S1[3]) + String(describing: w.L2S1M[3])
+            let CC = String(HomepageViewController.staticClean * w.L2S1[4]) + String(describing: w.L2S1M[4])
+            let Squat = String(HomepageViewController.staticSquat * w.L2S1[5]) + String(describing: w.L2S1M[5])
+            let FSquat = String(HomepageViewController.staticSquat * w.L2S1[6]) + String(describing: w.L2S1M[6])
+            let DBCJ = String(HomepageViewController.staticClean * w.L2S1[7]) + String(describing: w.L2S1M[7])
+            let SL = String(describing: w.L2S1M[8])
+            let OL = String(describing: w.L2S1M[9])
+            let OR = String(describing: w.L2S1M[10])
+            let WorkDown = String(describing: w.L2S1M[11])
             
-            let list = [title, CoR, PHP, PC, SC, CC, Squat, FSquat, DBCJ, SL, OL, ""] as [Any]
+            let list = [title, CoR, PHP, PC, SC, CC, Squat, FSquat, DBCJ, SL, OL, OR, WorkDown] as [Any]
             
             fontSettings(list: list)
         }
@@ -92,85 +95,95 @@ class L2CustomCollectionViewController: UICollectionViewController {
         if indexPath.item == 2 {
             let title = "Set 2"
             let CoR = "0.0"
-            let PHP = "0.0"
-            let PC = String(HomepageViewController.staticClean * w.L2S2[2]) + " x3"
-            let SC = String(HomepageViewController.staticClean * w.L2S2[3]) + " x5"
-            let CC = String(HomepageViewController.staticClean * w.L2S2[4]) + " x3"
-            let Squat = String(HomepageViewController.staticSquat * w.L2S2[5]) + " x5"
-            let FSquat = String(HomepageViewController.staticSquat * w.L2S2[6]) + " x5"
-            let DBCJ = String(HomepageViewController.staticClean * w.L2S2[7]) + " x5"
-            let SL = "0.0"
-            let OL = "0.0"
+            let PHP = String(HomepageViewController.staticClean * w.L2S2[1]) + String(describing: w.L2S2M[1])
+            let PC = String(HomepageViewController.staticClean * w.L2S2[2]) + String(describing: w.L2S2M[2])
+            let SC = String(HomepageViewController.staticClean * w.L2S2[3]) + String(describing: w.L2S2M[3])
+            let CC = String(HomepageViewController.staticClean * w.L2S2[4]) + String(describing: w.L2S2M[4])
+            let Squat = String(HomepageViewController.staticSquat * w.L2S2[5]) + String(describing: w.L2S2M[5])
+            let FSquat = String(HomepageViewController.staticSquat * w.L2S2[6]) + String(describing: w.L2S2M[6])
+            let DBCJ = String(HomepageViewController.staticClean * w.L2S2[7]) + String(describing: w.L2S2M[7])
+            let SL = String(describing: w.L2S2M[8])
+            let OL = String(describing: w.L2S2M[9])
+            let OR = String(describing: w.L2S2M[10])
+            let WorkDown = String(describing: w.L2S2M[11])
             
-            let list = [title, CoR, PHP, PC, SC, CC, Squat, FSquat, DBCJ, SL, OL, ""] as [Any]       
+            let list = [title, CoR, PHP, PC, SC, CC, Squat, FSquat, DBCJ, SL, OL, OR, WorkDown] as [Any]
             fontSettings(list: list)
         }
         
         if indexPath.item == 3 {
             let title = "Set 3"
             let CoR = "0.0"
-            let PHP = "0.0"
-            let PC = String(HomepageViewController.staticClean * w.L2S3[2]) + " x3"
-            let SC = String(HomepageViewController.staticClean * w.L2S3[3]) + " x5"
-            let CC = String(HomepageViewController.staticClean * w.L2S3[4]) + " x2"
-            let Squat = String(HomepageViewController.staticSquat * w.L2S3[5]) + " x5"
-            let FSquat = String(HomepageViewController.staticSquat * w.L2S3[6]) + " x5"
-            let DBCJ = "0.0"
-            let SL = "0.0"
-            let OL = "0.0"
+            let PHP = String(HomepageViewController.staticClean * w.L2S3[1]) + String(describing: w.L2S3M[1])
+            let PC = String(HomepageViewController.staticClean * w.L2S3[2]) + String(describing: w.L2S3M[2])
+            let SC = String(HomepageViewController.staticClean * w.L2S3[3]) + String(describing: w.L2S3M[3])
+            let CC = String(HomepageViewController.staticClean * w.L2S3[4]) + String(describing: w.L2S3M[4])
+            let Squat = String(HomepageViewController.staticSquat * w.L2S3[5]) + String(describing: w.L2S3M[5])
+            let FSquat = String(HomepageViewController.staticSquat * w.L2S3[6]) + String(describing: w.L2S3M[6])
+            let DBCJ = String(HomepageViewController.staticSquat * w.L2S3[7]) + String(describing: w.L2S3M[7])
+            let SL = String(describing: w.L2S3M[8])
+            let OL = String(describing: w.L2S3M[9])
+            let OR = String(describing: w.L2S3M[10])
+            let WorkDown = String(describing: w.L2S3M[11])
             
-            let list = [title, CoR, PHP, PC, SC, CC, Squat, FSquat, DBCJ, SL, OL, ""] as [Any]       
+            let list = [title, CoR, PHP, PC, SC, CC, Squat, FSquat, DBCJ, SL, OL, OR, WorkDown] as [Any]
             fontSettings(list: list)
         }
         
         if indexPath.item == 4 {
             let title = "Set 4"
             let CoR = "0.0"
-            let PHP = "0.0"
-            let PC = "0.0"
-            let SC = "0.0"
-            let CC = "0.0"
-            let Squat = String(HomepageViewController.staticSquat * w.L2S4[5]) + " x5"
-            let FSquat = String(HomepageViewController.staticSquat * w.L2S4[6]) + " x5"
-            let DBCJ = "0.0"
-            let SL = "0.0"
-            let OL = "0.0"
+            let PHP = String(HomepageViewController.staticClean * w.L2S4[1]) + String(describing: w.L2S4M[1])
+            let PC = String(HomepageViewController.staticClean * w.L2S4[2]) + String(describing: w.L2S4M[2])
+            let SC = String(HomepageViewController.staticClean * w.L2S4[3]) + String(describing: w.L2S4M[3])
+            let CC = String(HomepageViewController.staticClean * w.L2S4[4]) + String(describing: w.L2S4M[4])
+            let Squat = String(HomepageViewController.staticSquat * w.L2S4[5]) + String(describing: w.L2S4M[5])
+            let FSquat = String(HomepageViewController.staticSquat * w.L2S4[6]) + String(describing: w.L2S4M[6])
+            let DBCJ = String(HomepageViewController.staticSquat * w.L2S4[7]) + String(describing: w.L2S4M[7])
+            let SL = String(describing: w.L2S4M[8])
+            let OL = String(describing: w.L2S4M[9])
+            let OR = String(describing: w.L2S4M[10])
+            let WorkDown = String(describing: w.L2S4M[11])
             
-            let list = [title, CoR, PHP, PC, SC, CC, Squat, FSquat, DBCJ, SL, OL, ""] as [Any]       
+            let list = [title, CoR, PHP, PC, SC, CC, Squat, FSquat, DBCJ, SL, OL, OR, WorkDown] as [Any]
             fontSettings(list: list)
         }
         
         if indexPath.item == 5 {
             let title = "Set 5"
             let CoR = "0.0"
-            let PHP = "0.0"
-            let PC = "0.0"
-            let SC = "0.0"
-            let CC = "0.0"
-            let Squat = "0.0"
-            let FSquat = "0.0"
-            let DBCJ = "0.0"
-            let SL = "0.0"
-            let OL = "0.0"
+            let PHP = String(HomepageViewController.staticClean * w.L2S5[1]) + String(describing: w.L2S5M[1])
+            let PC = String(HomepageViewController.staticClean * w.L2S5[2]) + String(describing: w.L2S5M[2])
+            let SC = String(HomepageViewController.staticClean * w.L2S5[3]) + String(describing: w.L2S5M[3])
+            let CC = String(HomepageViewController.staticClean * w.L2S5[4]) + String(describing: w.L2S5M[4])
+            let Squat = String(HomepageViewController.staticSquat * w.L2S5[5]) + String(describing: w.L2S5M[5])
+            let FSquat = String(HomepageViewController.staticSquat * w.L2S5[6]) + String(describing: w.L2S5M[6])
+            let DBCJ = String(HomepageViewController.staticSquat * w.L2S5[7]) + String(describing: w.L2S5M[7])
+            let SL = String(describing: w.L2S5M[8])
+            let OL = String(describing: w.L2S5M[9])
+            let OR = String(describing: w.L2S5M[10])
+            let WorkDown = String(describing: w.L2S5M[11])
             
-            let list = [title, CoR, PHP, PC, SC, CC, Squat, FSquat, DBCJ, SL, OL, ""] as [Any]       
+            let list = [title, CoR, PHP, PC, SC, CC, Squat, FSquat, DBCJ, SL, OL, OR, WorkDown] as [Any]
             fontSettings(list: list)
         }
         
         if indexPath.item == 6 {
             let title = "Set 6"
             let CoR = "0.0"
-            let PHP = "0.0"
-            let PC = "Record"
-            let SC = "Record"
-            let CC = "0.0"
-            let Squat = "Record"
-            let FSquat = "Jumps"
-            let DBCJ = "0.0"
-            let SL = "0.0"
-            let OL = "0.0"
+            let PHP = String(HomepageViewController.staticClean * w.L2S6[1]) + String(describing: w.L2S6M[1])
+            let PC = String(HomepageViewController.staticClean * w.L2S6[2]) + String(describing: w.L2S6M[2])
+            let SC = String(HomepageViewController.staticClean * w.L2S6[3]) + String(describing: w.L2S6M[3])
+            let CC = String(HomepageViewController.staticClean * w.L2S6[4]) + String(describing: w.L2S6M[4])
+            let Squat = String(HomepageViewController.staticSquat * w.L2S6[5]) + String(describing: w.L2S6M[5])
+            let FSquat = String(HomepageViewController.staticSquat * w.L2S6[6]) + String(describing: w.L2S6M[6])
+            let DBCJ = String(HomepageViewController.staticSquat * w.L2S6[7]) + String(describing: w.L2S6M[7])
+            let SL = String(describing: w.L2S5M[8])
+            let OL = String(describing: w.L2S5M[9])
+            let OR = String(describing: w.L2S6M[10])
+            let WorkDown = String(describing: w.L2S6M[11])
             
-            let list = [title, CoR, PHP, PC, SC, CC, Squat, FSquat, DBCJ, SL, OL, ""] as [Any]       
+            let list = [title, CoR, PHP, PC, SC, CC, Squat, FSquat, DBCJ, SL, OL, OR, WorkDown] as [Any]
             fontSettings(list: list)
         }
         
