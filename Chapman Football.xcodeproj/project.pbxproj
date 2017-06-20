@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		063BC8081EEB48ED00729E71 /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063BC8071EEB48ED00729E71 /* Temp.swift */; };
 		B000BBEB1EDE077E00181A65 /* L2CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000BBEA1EDE077E00181A65 /* L2CustomCollectionViewController.swift */; };
 		B000BBED1EDE079000181A65 /* U2CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000BBEC1EDE079000181A65 /* U2CustomCollectionViewController.swift */; };
 		B05D33A31EDDE5CD00D9DF6D /* U1CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05D33A21EDDE5CD00D9DF6D /* U1CustomCollectionViewController.swift */; };
@@ -43,7 +42,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		063BC8071EEB48ED00729E71 /* Temp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
 		B000BBEA1EDE077E00181A65 /* L2CustomCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L2CustomCollectionViewController.swift; sourceTree = "<group>"; };
 		B000BBEC1EDE079000181A65 /* U2CustomCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = U2CustomCollectionViewController.swift; sourceTree = "<group>"; };
 		B05D33A21EDDE5CD00D9DF6D /* U1CustomCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = U1CustomCollectionViewController.swift; sourceTree = "<group>"; };
@@ -117,7 +115,6 @@
 			children = (
 				B099F19C1ED4A878009EFF1A /* Main.storyboard */,
 				B0E46C5D1ED75642002E82C3 /* WeekMultiplierDB.swift */,
-				063BC8071EEB48ED00729E71 /* Temp.swift */,
 				B099F1981ED4A878009EFF1A /* AppDelegate.swift */,
 				B099F19A1ED4A878009EFF1A /* ViewController.swift */,
 				B099F1C61ED4BFF8009EFF1A /* HomepageViewController.swift */,
@@ -299,7 +296,6 @@
 				B05D33A31EDDE5CD00D9DF6D /* U1CustomCollectionViewController.swift in Sources */,
 				B0614A7B1ED4EE56007B05FA /* L1CustomCollectionViewController.swift in Sources */,
 				B099F1C71ED4BFF8009EFF1A /* HomepageViewController.swift in Sources */,
-				063BC8081EEB48ED00729E71 /* Temp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
