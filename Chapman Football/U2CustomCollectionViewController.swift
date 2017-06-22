@@ -120,7 +120,7 @@ class U2CustomCollectionViewController: UICollectionViewController {
             let DBB = String(describing: w.U2S2M[4])
             let Dips = String(describing: w.U2S2M[5])
             let Rows = String(describing: w.U2S2M[6])
-            let BoxPU = String(describing: w.U2S1M[7])
+            let BoxPU = String(describing: w.U2S2M[7])
             let BR = String(HomepageViewController.staticClean * w.U2S2[8]) + String(describing: w.U2S2M[8])
             
             let list = [title, PWU, Bench, INCL, DBSnatch, DBB, Dips, Rows, BoxPU, BR] as [Any]
@@ -146,54 +146,127 @@ class U2CustomCollectionViewController: UICollectionViewController {
         }
         
         if indexPath.item == 4 {
-            let title = "Set 4"
-            let PWU:Double = 0
-            let Bench = String(HomepageViewController.staticBench * w.U2S4[1]) + String(describing: w.U2S4M[1])
-            let INCL = String(HomepageViewController.staticBench * w.U2S4[2]) + String(describing: w.U2S4M[2])
-            let DBSnatch = String(HomepageViewController.staticClean * w.U2S4[3]) + String(describing: w.U2S4M[3])
-            let DBB = String(describing: w.U2S4M[4])
-            let Dips = String(describing: w.U2S4M[5])
-            let Rows = String(describing: w.U2S4M[6])
-            let BoxPU = String(describing: w.U2S4M[7])
-            let BR = String(HomepageViewController.staticClean * w.U2S4[8]) + String(describing: w.U2S4M[8])
-            
-            let list = [title, PWU, Bench, INCL, DBSnatch, DBB, Dips, Rows, BoxPU, BR] as [Any]
-            
-            fontSettings(list: list)
+            if String(describing: w.U2S4M[1]) == "225 Max Reps" {
+                let title = "Set 4"
+                let PWU:Double = 0
+                let Bench = String(describing: w.U2S4M[1])
+                let INCL = String(HomepageViewController.staticBench * w.U2S4[2]) + String(describing: w.U2S4M[2])
+                let DBSnatch = String(HomepageViewController.staticClean * w.U2S4[3]) + String(describing: w.U2S4M[3])
+                let DBB = String(describing: w.U2S4M[4])
+                let Dips = String(describing: w.U2S4M[5])
+                let Rows = String(describing: w.U2S4M[6])
+                let BoxPU = String(describing: w.U2S4M[7])
+                let BR = String(HomepageViewController.staticClean * w.U2S4[8]) + String(describing: w.U2S4M[8])
+                
+                let list = [title, PWU, Bench, INCL, DBSnatch, DBB, Dips, Rows, BoxPU, BR] as [Any]
+                
+                fontSettings(list: list)
+            }
+            else {
+                let title = "Set 4"
+                let PWU:Double = 0
+                let Bench = String(HomepageViewController.staticBench * w.U2S4[1]) + String(describing: w.U2S4M[1])
+                let INCL = String(HomepageViewController.staticBench * w.U2S4[2]) + String(describing: w.U2S4M[2])
+                let DBSnatch = String(HomepageViewController.staticClean * w.U2S4[3]) + String(describing: w.U2S4M[3])
+                let DBB = String(describing: w.U2S4M[4])
+                let Dips = String(describing: w.U2S4M[5])
+                let Rows = String(describing: w.U2S4M[6])
+                let BoxPU = String(describing: w.U2S4M[7])
+                let BR = String(HomepageViewController.staticClean * w.U2S4[8]) + String(describing: w.U2S4M[8])
+                
+                let list = [title, PWU, Bench, INCL, DBSnatch, DBB, Dips, Rows, BoxPU, BR] as [Any]
+                
+                fontSettings(list: list)
+            }
+
         }
         
         if indexPath.item == 5 {
-            let title = "Set 5"
-            let PWU:Double = 0
-            let Bench = String(HomepageViewController.staticBench * w.U2S5[1]) + String(describing: w.U2S5M[1])
-            let INCL = String(HomepageViewController.staticClean * w.U2S5[2]) + String(describing: w.U2S5M[2])
-            let DBSnatch = String(HomepageViewController.staticClean * w.U2S5[3]) + String(describing: w.U2S5M[3])
-            let DBB = String(describing: w.U2S5M[4])
-            let Dips = String(describing: w.U2S5M[5])
-            let Rows = String(describing: w.U2S5M[6])
-            let BoxPU = String(describing: w.U2S5M[7])
-            let BR = String(HomepageViewController.staticClean * w.U2S5[8]) //+ String(describing: w.U2S5M[8])
-            
-            let list = [title, PWU, Bench, INCL, DBSnatch, DBB, Dips, Rows, BoxPU, BR] as [Any]
-            
-            fontSettings(list: list)
+            if String(describing: w.U2S5M[2]) == "Add Ball Drops" {
+                let title = "Set 5"
+                let PWU:Double = 0
+                let Bench = String(describing: w.U2S5M[1])
+                let INCL = String(describing: w.U2S5M[2])
+                let DBSnatch = String(HomepageViewController.staticClean * w.U2S5[3]) + String(describing: w.U2S5M[3])
+                let DBB = String(describing: w.U2S5M[4])
+                let Dips = String(describing: w.U2S5M[5])
+                let Rows = String(describing: w.U2S5M[6])
+                let BoxPU = String(describing: w.U2S5M[7])
+                let BR = String(HomepageViewController.staticClean * w.U2S5[8]) //+ String(describing: w.U2S5M[8])
+                
+                let list = [title, PWU, Bench, INCL, DBSnatch, DBB, Dips, Rows, BoxPU, BR] as [Any]
+                
+                fontSettings(list: list)
+            }
+            else if String(describing: w.U2S5M[1]) == "Record" {
+                let title = "Set 5"
+                let PWU:Double = 0
+                let Bench = String(describing: w.U2S5M[1])
+                let INCL = String(HomepageViewController.staticClean * w.U2S5[2]) + String(describing: w.U2S5M[2])
+                let DBSnatch = String(HomepageViewController.staticClean * w.U2S5[3]) + String(describing: w.U2S5M[3])
+                let DBB = String(describing: w.U2S5M[4])
+                let Dips = String(describing: w.U2S5M[5])
+                let Rows = String(describing: w.U2S5M[6])
+                let BoxPU = String(describing: w.U2S5M[7])
+                let BR = String(HomepageViewController.staticClean * w.U2S5[8]) //+ String(describing: w.U2S5M[8])
+                
+                let list = [title, PWU, Bench, INCL, DBSnatch, DBB, Dips, Rows, BoxPU, BR] as [Any]
+                
+                fontSettings(list: list)
+            }
+            else {
+                let title = "Set 5"
+                let PWU:Double = 0
+                let Bench = String(HomepageViewController.staticBench * w.U2S5[1]) + String(describing: w.U2S5M[1])
+                let INCL = String(HomepageViewController.staticClean * w.U2S5[2]) + String(describing: w.U2S5M[2])
+                let DBSnatch = String(HomepageViewController.staticClean * w.U2S5[3]) + String(describing: w.U2S5M[3])
+                let DBB = String(describing: w.U2S5M[4])
+                let Dips = String(describing: w.U2S5M[5])
+                let Rows = String(describing: w.U2S5M[6])
+                let BoxPU = String(describing: w.U2S5M[7])
+                let BR = String(HomepageViewController.staticClean * w.U2S5[8]) //+ String(describing: w.U2S5M[8])
+                
+                let list = [title, PWU, Bench, INCL, DBSnatch, DBB, Dips, Rows, BoxPU, BR] as [Any]
+                
+                fontSettings(list: list)
+            }
+
         }
         
         if indexPath.item == 6 {
-            let title = "Set 6"
-            let PWU:Double = 0
-            let Bench = String(HomepageViewController.staticBench * w.U2S6[1]) + String(describing: w.U2S5M[1])
-            let INCL = String(HomepageViewController.staticBench * w.U2S6[2]) + String(describing: w.U2S6M[2])
-            let DBSnatch = String(HomepageViewController.staticClean * w.U2S6[3]) + String(describing: w.U2S6M[3])
-            let DBB = String(describing: w.U2S6M[4])
-            let Dips = String(HomepageViewController.staticSquat * w.U2S6[5]) + String(describing: w.U2S6M[5])
-            let Rows = String(HomepageViewController.staticClean * w.U2S5[6]) + String(describing: w.U2S6M[6])
-            let BoxPU = String(describing: w.U2S6M[7])
-            let BR = String(HomepageViewController.staticClean * w.U2S6[8]) + String(describing: w.U2S6M[8])
-            
-            let list = [title, PWU, Bench, INCL, DBSnatch, DBB, Dips, Rows, BoxPU, BR] as [Any]
-            
-            fontSettings(list: list)
+            if String(describing: w.U2S6M[2]) == "Add Ball Drops" {
+                let title = "Set 6"
+                let PWU:Double = 0
+                let Bench = String(HomepageViewController.staticBench * w.U2S6[1]) + String(describing: w.U2S6M[1])
+                let INCL = String(describing: w.U2S6M[2])
+                let DBSnatch = String(HomepageViewController.staticClean * w.U2S6[3]) + String(describing: w.U2S6M[3])
+                let DBB = String(describing: w.U2S6M[4])
+                let Dips = String(HomepageViewController.staticSquat * w.U2S6[5]) + String(describing: w.U2S6M[5])
+                let Rows = String(HomepageViewController.staticClean * w.U2S5[6]) + String(describing: w.U2S6M[6])
+                let BoxPU = String(describing: w.U2S6M[7])
+                let BR = String(HomepageViewController.staticClean * w.U2S6[8]) + String(describing: w.U2S6M[8])
+                
+                let list = [title, PWU, Bench, INCL, DBSnatch, DBB, Dips, Rows, BoxPU, BR] as [Any]
+                
+                fontSettings(list: list)
+            }
+            else {
+                let title = "Set 6"
+                let PWU:Double = 0
+                let Bench = String(HomepageViewController.staticBench * w.U2S6[1]) + String(describing: w.U2S6M[1])
+                let INCL = String(HomepageViewController.staticBench * w.U2S6[2]) + String(describing: w.U2S6M[2])
+                let DBSnatch = String(HomepageViewController.staticClean * w.U2S6[3]) + String(describing: w.U2S6M[3])
+                let DBB = String(describing: w.U2S6M[4])
+                let Dips = String(HomepageViewController.staticSquat * w.U2S6[5]) + String(describing: w.U2S6M[5])
+                let Rows = String(HomepageViewController.staticClean * w.U2S5[6]) + String(describing: w.U2S6M[6])
+                let BoxPU = String(describing: w.U2S6M[7])
+                let BR = String(HomepageViewController.staticClean * w.U2S6[8]) + String(describing: w.U2S6M[8])
+                
+                let list = [title, PWU, Bench, INCL, DBSnatch, DBB, Dips, Rows, BoxPU, BR] as [Any]
+                
+                fontSettings(list: list)
+            }
+
         }
         
         if indexPath.item > 6 {
