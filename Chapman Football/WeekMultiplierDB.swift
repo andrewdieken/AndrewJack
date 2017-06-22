@@ -1614,11 +1614,11 @@ class WeekMultiplierDB {
     var W12L2S6 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     //**
     var W12L2S1M = ["", " x5", " x3", " x3", " x3", " x5", " x5", " x5", "2x10", "2x10", "0.0", "0.0"]
-    var W12L2S2M = ["", "", " x3", " x3", " x3", " x5", " x5", " x5", "", "", "0.0", "0.0"]
-    var W12L2S3M = ["", "", " x3", " x3", " x3", " x5", " x5", " x5", "", "", "0.0", "0.0"]
-    var W12L2S4M = ["", "", " x2", " x2", " x2", " x10", " x5", "", "", "", "0.0", "0.0"]
-    var W12L2S5M = ["", "", " x1", " x1", " x1", "Add Box Jumps", "Add Box Jumps", "", "", "", "0.0", "0.0"]
-    var W12L2S6M = ["", "", "Check Off", "Check Off", "Check Off", "", "", "", "", "", "0.0", "0.0"]
+    var W12L2S2M = ["", "", " x3", " x3", " x3", " x5", " x5", " x5", "0.0", "0.0", "0.0", "0.0"]
+    var W12L2S3M = ["", "", " x3", " x3", " x3", " x5", " x5", " x5", "0.0", "0.0", "0.0", "0.0"]
+    var W12L2S4M = ["", "", " x2", " x2", " x2", " x10", " x5", "", "0.0", "0.0", "0.0", "0.0"]
+    var W12L2S5M = ["", "", " x1", " x1", " x1", "Add Box Jumps", "Add Box Jumps", "", "0.0", "0.0", "0.0", "0.0"]
+    var W12L2S6M = ["", "", "Check Off", "Check Off", "Check Off", "", "", "", "0.0", "0.0", "0.0", "0.0"]
     //set variable to list of lower 2 exercises 
     var W12L2Exercise = ["Exercise",
         "Combo OR Plate",
