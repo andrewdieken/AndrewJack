@@ -277,7 +277,7 @@ class WeekMultiplierDB {
             U2S5M = W3U2S5M
             U2S6M = W3U2S6M
             //
-            U2Exercise = W3L2Exercise
+            U2Exercise = W3U2Exercise
         }
         
         else if HomepageViewController.selectedWeek == "Week 4" {
@@ -806,7 +806,7 @@ class WeekMultiplierDB {
     var W1U1S3M = ["", " x8", " x10", " x4", " Hard x5", " x5", ""]
     var W1U1S4M = ["", " x8", "", " x4", " Fail x5", "", ""]
     var W1U1S5M = ["", " x8", "", "", "0.0", "", ""]
-    var W1U1S6M = ["", " Max Reps", "", "", "0.0", "", ""]
+    var W1U1S6M = ["", "Max Reps", "", "", "0.0", "", ""]
     //**set variable to list of upper 1 exercises
     var W1U1Exercise = ["Exercise", "Plate Warm Up", "Bench", "Incline BB or DB", "Snatch", "DB Bench", "Push Jerk", "Lat Pulls OR Rows", "0.0"]
     
@@ -836,11 +836,11 @@ class WeekMultiplierDB {
     var W1U2S6 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0]
     //**
     var W1U2S1M = ["", " 3x3", " x10", " x5", " 3 x 10", " 3 x Fail", " 3 x 10", " 3 x Fail", " x8"]
-    var W1U2S2M = ["", " 3x3", " x10", " x5", "", " Superset", "", "", ""]
-    var W1U2S3M = ["", " 3x3", " x10", " x5", "", "", "", "", " x8"]
-    var W1U2S4M = ["", " 3x3", "", "", "", "", "", "", " x8"]
-    var W1U2S5M = ["", " Record", "", "", "", "", "", "", ""]
-    var W1U2S6M = ["", "", "", "", "", "", "", "", ""]
+    var W1U2S2M = ["", " 3x3", " x10", " x5", "0.0", "Superset", "0.0", "0.0", " x8"]
+    var W1U2S3M = ["", " 3x3", " x10", " x5", "0.0", "0.0", "0.0", "0.0", " x8"]
+    var W1U2S4M = ["", " 3x3", "", "", "0.0", "0.0", "0.0", "0.0", " x8"]
+    var W1U2S5M = ["", "Record", "", "", "0.0", "0.0", "0.0", "0.0", ""]
+    var W1U2S6M = ["", "", "", "", "0.0", "", "", "0.0", ""]
     //Exercise List 
     var W1U2Exercise = ["Exercise", "Plate Warm Up", "3x3 Bench", "Incline BB or DB", "DB Snath", "DB Bench", "Dips/Push dwn", "Lat Pull or Rows", "Box Push-ups", "Bent Row"]
     
@@ -878,7 +878,7 @@ class WeekMultiplierDB {
     var W2U1S3M = ["", " x3", " x5", " x4", " Hard x5", " x5", ""]
     var W2U1S4M = ["", " x8", " x5", " x4", " Fail x5", "", ""]
     var W2U1S5M = ["", " x8", "", "", "0.0", "", ""]
-    var W2U1S6M = ["", " Last Max Reps", "", "", "0.0", "", ""]
+    var W2U1S6M = ["", "Last Max Reps", "", "", "0.0", "", ""]
     //set variable to upperbody 1 exercises 
     var W2U1Exercise = ["Exercise", "Plate Warm Up", "Bench", "Incline BB or DB", "Snatch", "DB Bench", "Push Jerk", "Lat Pulls or Rows", "Supplemental Lifts"]
     //lowerbody 2
@@ -889,12 +889,12 @@ class WeekMultiplierDB {
     var W2L2S5 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     var W2L2S6 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     //**
-    var W2L2S1M = ["", " x5", " x3", " x3", " x2", " x10", " x5", " x5", " x10", "", "0.0", "0.0"]
-    var W2L2S2M = ["", "", " x3", " x3", " x2", " x5", " x5", " x5", "", "0.0", "0.0", "0.0"]
-    var W2L2S3M = ["", "", " x3", " x3", " x2", " x5", " x5", "", "", "0.0", "0.0", "0.0"]
-    var W2L2S4M = ["", "", "", " x3", "", " x5", " x5", "", "", "0.0", "0.0", "0.0"]
-    var W2L2S5M = ["", "", "", "", "", "", "", "", "", "0.0", "0.0", "0.0"]
-    var W2L2S6M = ["", "", "Record", "Record", "", "Box Jumps", "Box Jumps", "", "", "", "0.0", "0.0"]
+    var W2L2S1M = ["", " x5", " x3", " x3", " x2", " x10", " x5", " x5", "2 x10", "0.0", "0.0", "0.0"]
+    var W2L2S2M = ["", "", " x3", " x3", " x2", " x5", " x5", " x5", "0.0", "0.0", "0.0", "0.0"]
+    var W2L2S3M = ["", "", " x3", " x3", " x2", " x5", " x5", "", "0.0", "0.0", "0.0", "0.0"]
+    var W2L2S4M = ["", "", "", " x3", "", " x5", " x5", "", "0.0", "0.0", "0.0", "0.0"]
+    var W2L2S5M = ["", "", "", "", "", "", "", "", "0.0", "0.0", "0.0", "0.0"]
+    var W2L2S6M = ["", "", "Record", "Record", "", "Box Jumps", "Box Jumps", "", "", "0.0", "0.0", "0.0"]
     //set variable to lowerbody 2 exercises 
     var W2L2Exercise = ["Exercise", "Combo OR Plate", "Power High Pull", "Power Clean", "Squat Clean", "Combo Clean", "Squat**", "Ft. Squat**", "DB Clean & Jerk", "Side Lunge", "** = OR", "0.0", "0.0"]
     //upperbody 2
@@ -905,12 +905,12 @@ class WeekMultiplierDB {
     var W2U2S5 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0]
     var W2U2S6 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0]
     //**
-    var W2U2S1M = ["", " 3x3", " x10", " x5", " x5", " 3 x Fail", " 3 x 10", " 3 x Fail", " x8"]
-    var W2U2S2M = ["", " 3x3", " x10", " x5", "", " Superset", "", "", " x8"]
-    var W2U2S3M = ["", " 3x3", " x10", " x5", "", "", "", "", " x8"]
-    var W2U2S4M = ["", " 3x3", "", "", "", "", "", "", " x8"]
-    var W2U2S5M = ["", " Record", "", "", "", "", "", "", ""]
-    var W2U2S6M = ["", "", "", "", "", "", "", "", ""]
+    var W2U2S1M = ["", " 3x3", " x10", " x5", "4 x 5", " 3 x Fail", " 3 x 10", " 3 x Fail", " x8"]
+    var W2U2S2M = ["", " 3x3", " x10", " x5", "0.0", "Superset", "0.0", "0.0", " x8"]
+    var W2U2S3M = ["", " 3x3", " x10", " x5", "0.0", "0.0", "0.0", "0.0", " x8"]
+    var W2U2S4M = ["", " 3x3", "", "", "0.0", "0.0", "0.0", "0.0", " x8"]
+    var W2U2S5M = ["", "Record", "", "", "0.0", "0.0", "0.0", "0.0", ""]
+    var W2U2S6M = ["", "", "", "", "0.0", "", "", "0.0", ""]
     //set variable to upperbody 2 exercises 
     var W2U2Exercise = ["Exercise", "Plate Warm Up", "3x3 Bench", "Incline BB or DB", "DB Snatch", "DB Bench", "Dips/Push dwn", "Lat Pulls or Rows", "Box Push-ups", "Bent Row"]
 
@@ -945,7 +945,7 @@ class WeekMultiplierDB {
     var W3U1S2M = ["", " x4", " x5", " x4", " Medium x5", " x5", ""]
     var W3U1S3M = ["", " x3", " x5", " x4", " Hard x5", " x5", ""]
     var W3U1S4M = ["", " x8", " x5", " x4", " Fail x5", "", ""]
-    var W3U1S5M = ["", " Last Max Reps", "", "", "0.0", "", ""]
+    var W3U1S5M = ["", "Last Max Reps", "", "", "0.0", "", ""]
     var W3U1S6M = ["", "", "", "", "0.0", "", ""]
     //set variable to list of upperbody 1 exercises 
     var W3U1Exercise = ["Exercise", "Plate Warm Up", "Bench", "Incline BB or DB", "Snatch", "DB Bench", "Push Jerk", "Rows", "Supplemental Lifts"]
@@ -958,11 +958,11 @@ class WeekMultiplierDB {
     var W3L2S6 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     //**
     var W3L2S1M = ["", " x5", " x3", " x3", " x2", " x10", " x5", " x5", " x10", " x10", "0.0", "0.0"]
-    var W3L2S2M = ["", "", " x3", " x3", " x2", " x5", " x5", " x5", "", "", "0.0", "0.0"]
-    var W3L2S3M = ["", "", " x3", " x3", " x2", " x5", " x5", " x5", "", "", "0.0", "0.0"]
-    var W3L2S4M = ["", "", "", " x3", "", " x5", " x5", "", "", "", "0.0", "0.0"]
-    var W3L2S5M = ["", "", "", "", "", "", "Box Jumps", "", "", "", "0.0", "0.0"]
-    var W3L2S6M = ["", "", "Record", "Record", "", "", "Box Jumps", "", "", "", "0.0", "0.0"]
+    var W3L2S2M = ["", "", " x3", " x3", " x2", " x5", " x5", " x5", "0.0", "0.0", "0.0", "0.0"]
+    var W3L2S3M = ["", "", " x3", " x3", " x2", " x5", " x5", " x5", "0.0", "0.0", "0.0", "0.0"]
+    var W3L2S4M = ["", "", "", " x3", "", " x5", " x5", "", "0.0", "0.0", "0.0", "0.0"]
+    var W3L2S5M = ["", "", "", "", "", "", "Box Jumps", "", "0.0", "0.0", "0.0", "0.0"]
+    var W3L2S6M = ["", "", "Record", "Record", "", "", "Box Jumps", "", "0.0", "0.0", "0.0", "0.0"]
     //set variable to list of lowerbody 2 exercises 
     var W3L2Exercise = ["Exercise", "Combo OR Plate", "Power High Pull", "Power Clean", "Squat Clean", "Combo Clean", "Squat", "Ft. Squat", "DB Clean & Jerk", "Side Lunge", "RDL", "0.0", "0.0"]
     //upperbody 2
@@ -973,12 +973,12 @@ class WeekMultiplierDB {
     var W3U2S5 = [0.0, 0.0, 0, 0, 0, 0, 0, 0, 0.0]
     var W3U2S6 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0.0]
     //**
-    var W3U2S1M = ["", " 3x3", " x8", " x5", " x5", " 3 x Fail", " 3 x 10", " 3 x Fail", " x8"]
-    var W3U2S2M = ["", " 3x3", " x8", " x5", "", " Superset", "", "", " x8"]
-    var W3U2S3M = ["", " 3x3", " x8", " x5", "", "", "", "", " x8"]
-    var W3U2S4M = ["", " 3x3", "", "", "", "", "", "", " x8"]
-    var W3U2S5M = ["", " Record", "", "", "", "", "", "", ""]
-    var W3U2S6M = ["", "", "", "", "", "", "", "", ""]
+    var W3U2S1M = ["", " 3x3", " x8", "4 x 5", " x5", " 3 x Fail", " 3 x 10", " 3 x Fail", " x8"]
+    var W3U2S2M = ["", " 3x3", " x8", " x5", "0.0", " Superset", "0.0", "0.0", " x8"]
+    var W3U2S3M = ["", " 3x3", " x8", " x5", "0.0", "0.0", "0.0", "0.0", " x8"]
+    var W3U2S4M = ["", " 3x3", "", "", "0.0", "0.0", "0.0", "0.0", " x8"]
+    var W3U2S5M = ["", "Record", "", "", "0.0", "0.0", "0.0", "0.0", ""]
+    var W3U2S6M = ["", "", "", "", "0.0", "", "", "0.0", ""]
     //set variable to list of upperbody 2 exercises 
     var W3U2Exercise = ["Exercise", "Plate Warm Up", "3x3 Bench", "Incline BB or DB", "DB Snatch", "DB Bench", "Dips/Push dwn", "Lat Pulls or Rows", "Box Push-ups", "Bent Row"]
     
@@ -1020,7 +1020,7 @@ class WeekMultiplierDB {
     var W4U1S3M = ["", " x6", " x5", " x4", " Hard x5", " x5", ""]
     var W4U1S4M = ["", " x6", " x5", " x4", " Fail x5", "", ""]
     var W4U1S5M = ["", " X6", "", "", "0.0", "", ""]
-    var W4U1S6M = ["", " Last Max Reps", "", "", "0.0", "", ""]
+    var W4U1S6M = ["", "Last Max Reps", "", "", "0.0", "", ""]
     //set variable to list of upperbody 1 exercises 
     var W4U1Exercise = ["Exercise",
         "Plate Warm Up",
@@ -1066,11 +1066,11 @@ class WeekMultiplierDB {
     var W4U2S6 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0]
     //**
     var W4U2S1M = ["", " 3x3", " x8", " x5", " x10", " 3 x Fail", " 3 x 10", " 3 x Fail", " x8"]
-    var W4U2S2M = ["", " 3x3", " x8", " x5", "", " Superset", "", "", " x8"]
-    var W4U2S3M = ["", " 3x3", " x8", " x5", "", "", "", "", " x8"]
-    var W4U2S4M = ["", " 3x3", "", "", "", "", "", "", " x8"]
-    var W4U2S5M = ["", " Record", "", "", "", "", "", "", ""]
-    var W4U2S6M = ["", "", "", "", "", "", "", "", ""]
+    var W4U2S2M = ["", " 3x3", " x8", " x5", "0.0", " Superset", "0.0", "0.0", " x8"]
+    var W4U2S3M = ["", " 3x3", " x8", " x5", "0.0", "0.0", "0.0", "0.0", " x8"]
+    var W4U2S4M = ["", " 3x3", "", "", "0.0", "0.0", "0.0", "0.0", " x8"]
+    var W4U2S5M = ["", "Record", "", "", "0.0", "0.0", "0.0", "0.0", ""]
+    var W4U2S6M = ["", "", "", "", "0.0", "", "", "0.0", ""]
     //set variable to list of upperbody 2 exercises 
     var W4U2Exercise = ["Exercise",
         "Plate Warm Up",
@@ -1121,7 +1121,7 @@ class WeekMultiplierDB {
     var W5U1S3M = ["", " x1", " x5", " x4", " Hard x5", " x5", ""]
     var W5U1S4M = ["", " x6", " x5", " x4", " Fail x5", "", ""]
     var W5U1S5M = ["", " X6", "", "", "0.0", "", ""]
-    var W5U1S6M = ["", " Last Max Reps", "", "", "0.0", "", ""]
+    var W5U1S6M = ["", "Last Max Reps", "", "", "0.0", "", ""]
     //set variable to upperbody 1 exercises 
     var W5U1Exercise = ["Exercise",
         "Plate Warm Up",
@@ -1140,7 +1140,7 @@ class WeekMultiplierDB {
     var W5L2S5 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     var W5L2S6 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     //**
-    var W5L2S1M = ["", " x5", " x3", " x3", " x3", " x10", " x5", " x5", " x10", " x10", "0.0", "0.0"]
+    var W5L2S1M = ["", " x5", " x3", " x3", " x3", " x10", " x5", " x5", "2 x 10", "2 x 10", "0.0", "0.0"]
     var W5L2S2M = ["", "", " x3", " x3", " x3", " x5", " x5", " x5", "0.0", "0.0", "0.0", "0.0"]
     var W5L2S3M = ["", "", " x3", " x3", " x3", " x5", " x5", " x5", "0.0", "0.0", "0.0", "0.0"]
     var W5L2S4M = ["", "", "", "", "", " x5", " x3", "", "0.0", "0.0", "0.0", "0.0"]
@@ -1166,12 +1166,12 @@ class WeekMultiplierDB {
     var W5U2S5 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0]
     var W5U2S6 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0]
     //**
-    var W5U2S1M = ["", " 3x3", " x8", " x5", " x5", " 3 x Fail", " 3 x 10", " 3 x Fail", " x8"]
-    var W5U2S2M = ["", " 3x3", " x8", " x5", "", " Superset", "", "", " x8"]
-    var W5U2S3M = ["", " 3x3", " x8", " x5", "", "", "", "", " x8"]
-    var W5U2S4M = ["", " 3x3", "", "", "", "", "", "", " x8"]
-    var W5U2S5M = ["", "Record", "Add Ball Drops", "", "", "", "", "", ""]
-    var W5U2S6M = ["", "", "Add Ball Drops", "", "", "", "", "", ""]
+    var W5U2S1M = ["", " 3x3", " x8", " x5", "3 x 5", " 3 x Fail", " 3 x 10", " 3 x Fail", " x8"]
+    var W5U2S2M = ["", " 3x3", " x8", " x5", "0.0", " Superset", "0.0", "0.0", " x8"]
+    var W5U2S3M = ["", " 3x3", " x8", " x5", "0.0", "0.0", "0.0", "0.0", " x8"]
+    var W5U2S4M = ["", " 3x3", "", "", "0.0", "0.0", "0.0", "0.0", " x8"]
+    var W5U2S5M = ["", "Record", "Add Ball Drops", "", "0.0", "0.0", "0.0", "0.0", ""]
+    var W5U2S6M = ["", "", "Add Ball Drops", "", "0.0", "", "", "0.0", ""]
     //set variable to list of upperbody 2 exercises 
     var W5U2Exercise = ["Exercise",
         "Plate Warm Up",
@@ -1221,7 +1221,7 @@ class WeekMultiplierDB {
     var W6U1S3M = ["", " x2", " x5", " x4", " Hard x5", " x5", ""]
     var W6U1S4M = ["", " x1", " x5", " x4", " Fail x5", "", ""]
     var W6U1S5M = ["", " x6", "", "", "0.0", "", ""]
-    var W6U1S6M = ["", " Last Max Reps", "", "", "0.0", "", ""]
+    var W6U1S6M = ["", "Last Max Reps", "", "", "0.0", "", ""]
     //set variable to list of upper 1 exercises 
     var W6U1Exercise = ["Exercise",
         "Plate Warm Up",
@@ -1240,7 +1240,7 @@ class WeekMultiplierDB {
     var W6L2S5 = [0.0, 0, 0, 0.7, 0, 0, 0, 0, 0, 0, 0, 0]
     var W6L2S6 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     //**
-    var W6L2S1M = ["", " x5", " x3", " x3", " x1", " x10", " x5", " x5", " x10", " x10", "0.0", "0.0"]
+    var W6L2S1M = ["", " x5", " x3", " x3", " x1", " x10", " x5", " x5", "2 x 10", "2 x 10", "0.0", "0.0"]
     var W6L2S2M = ["", "", " x3", " x3", " x1", " x5", " x5", " x5", "0.0", "0.0", "0.0", "0.0"]
     var W6L2S3M = ["", "", " x3", " x3", " x1", " x5", " x5", " x5", "0.0", "0.0", "0.0", "0.0"]
     var W6L2S4M = ["", "", "", " x3", "", " x5", " x3", "", "0.0", "0.0", "0.0", "0.0"]
@@ -1391,7 +1391,7 @@ class WeekMultiplierDB {
     var W10L1S2M = ["", " x5", " x3", " x4", " x5", "", "", "0.0"]
     var W10L1S3M = ["", "", " x2", " x3", " x5", "", "", "0.0"]
     var W10L1S4M = ["", "", " x2", " x2", " x5", "", "", "0.0"]
-    var W10L1S5M = ["", "", " MAX REPS!!!", "MAX REPS!!!", "MAX REPS!!!", "", "", "0.0"]
+    var W10L1S5M = ["", "", "MAX REPS!!!", "MAX REPS!!!", "MAX REPS!!!", "0.0", "", "0.0"]
     var W10L1S6M = ["", "", "", "", "", "", "", "0.0"]
     //set variable to list of lower 1 exercises 
     var W10L1Exercise = ["Exercise",
@@ -1411,7 +1411,7 @@ class WeekMultiplierDB {
     var W10U1S1M = ["", " x4", " x5", "Easy x5", "0.0", "", ""]
     var W10U1S2M = ["", " x3", " x5", "Medium x5", "0.0", "", ""]
     var W10U1S3M = ["", " x2", " x5", "Hard x5", "0.0", "", ""]
-    var W10U1S4M = ["", " x1", " x5", " Fail x5", "0.0", "", ""]
+    var W10U1S4M = ["", " x1", " x5", "Fail x5", "0.0", "", ""]
     var W10U1S5M = ["", " x1", "", "", "0.0", "", ""]
     var W10U1S6M = ["", "MAX REPS!!!", "", "", "0.0", "", ""]
     //set variable to list of upper 1 exercises 
@@ -1511,11 +1511,11 @@ class WeekMultiplierDB {
     var W11L2S6 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     //**
     var W11L2S1M = ["", " x5", " x3", " x3", " x3", " x5", " x5", " x5", "2x10", "2x10", "0.0", "0.0"]
-    var W11L2S2M = ["", "", " x3", " x3", " x3", " x5", " x5", " x5", "", "", "0.0", "0.0"]
-    var W11L2S3M = ["", "", " x3", " x3", " x3", " x5", " x5", " x5", "", "", "0.0", "0.0"]
-    var W11L2S4M = ["", "", " x2", " x2", " x2", " x10", " x5", "", "", "", "0.0", "0.0"]
-    var W11L2S5M = ["", "", " x1", " x1", " x1", "Add Box Jumps", "Add Box Jumps", "", "", "", "0.0", "0.0"]
-    var W11L2S6M = ["", "", "Check Off", "Check Off", "Check Off", "", "", "", "", "", "0.0", "0.0"]
+    var W11L2S2M = ["", "", " x3", " x3", " x3", " x5", " x5", " x5", "0.0", "0.0", "0.0", "0.0"]
+    var W11L2S3M = ["", "", " x3", " x3", " x3", " x5", " x5", " x5", "0.0", "0.0", "0.0", "0.0"]
+    var W11L2S4M = ["", "", " x2", " x2", " x2", " x10", " x5", "", "0.0", "0.0", "0.0", "0.0"]
+    var W11L2S5M = ["", "", " x1", " x1", " x1", "Add Box Jumps", "Add Box Jumps", "", "0.0", "0.0", "0.0", "0.0"]
+    var W11L2S6M = ["", "", "Check Off", "Check Off", "Check Off", "", "", "", "0.0", "0.0", "0.0", "0.0"]
     //set variable to list of lowerbody 2 exercises 
     var W11L2Exercise = ["Exercise",
         "Combo OR Plate",
@@ -1642,11 +1642,11 @@ class WeekMultiplierDB {
     var W12U2S6 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0]
     //**
     var W12U2S1M = ["", " x5", " x5", " x5", "4 x 5", " 3 x Fail", " 3 x 10", " 3 x Fail", " x8"]
-    var W12U2S2M = ["", " x5", " x5", " x5", "", "Superset", "", "", " x8"]
-    var W12U2S3M = ["", " x5", " x5", " x5", "", "", "", "", " x8"]
-    var W12U2S4M = ["", "225 Max Resp", " x5", "", "", "", "", "", " x8"]
-    var W12U2S5M = ["", "Record", "Add Ball Drops", "", "", "", "", "", ""]
-    var W12U2S6M = ["", "", "Add Ball Drops", "", "", "", "", "", ""]
+    var W12U2S2M = ["", " x5", " x5", " x5", "0.0", "Superset", "0.0", "0.0", " x8"]
+    var W12U2S3M = ["", " x5", " x5", " x5", "0.0", "0.0", "0.0", "0.0", " x8"]
+    var W12U2S4M = ["", "225 Max Reps", " x5", "", "0.0", "0.0", "0.0", "0.0", " x8"]
+    var W12U2S5M = ["", "Record", "Add Ball Drops", "", "0.0", "0.0", "0.0", "0.0", ""]
+    var W12U2S6M = ["", "", "Add Ball Drops", "", "0.0", "", "", "0.0", ""]
     //set variable to list of upper 2 exercises 
     var W12U2Exercise = ["Exercise",
         "Plate Warm Up",
