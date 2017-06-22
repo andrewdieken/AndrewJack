@@ -63,9 +63,7 @@ class L1CustomCollectionViewController: UICollectionViewController {
 
         if indexPath.item == 0 {
             let list = w.L1Exercise
-                
-            //let list = ["Exercise", "Combo OR Plate", "Power High Pull", "Power Clean", "Hang Clean", "DB Clean", "Squat", "RDL", "Overhead Lunge"]
-            
+                            
             fontSettings(list: list)
         }
             
