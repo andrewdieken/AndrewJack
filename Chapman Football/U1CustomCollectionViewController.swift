@@ -63,9 +63,6 @@ class U1CustomCollectionViewController: UICollectionViewController {
         
         if indexPath.item == 0 {
             let list = w.U1Exercise as [Any]
-                
-                
-            //let list = ["Exercise", "Plate Warm Up", "Bench", "Incline BB or DB", "Snatch", "DB Bench", "Push Jerk", "Lat Pulls or Rows", "Supplemental Lifts"] as [Any]
             
             fontSettings(list: list)
         }

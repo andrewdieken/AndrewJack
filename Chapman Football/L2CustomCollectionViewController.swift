@@ -65,9 +65,6 @@ class L2CustomCollectionViewController: UICollectionViewController {
         if indexPath.item == 0 {
             let list = w.L2Exercise as [Any]
                 
-                
-            //let list = ["Exercise", "Combo OR Plate", "Power High Pull", "Power Clean", "Squat Clean", "Combo Clean", "Squat**", "Ft. Squat**", "DB Clean & Jerk", "Side Lunge", "Overhead\n Lunges", "** = OR"] as [Any]
-            
             fontSettings(list: list)
         }
         
