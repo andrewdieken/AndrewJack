@@ -12,6 +12,10 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loginButtonOutlet.layer.cornerRadius = 10
+        loginButtonOutlet.clipsToBounds = true
+    
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -19,7 +23,10 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    
+    
+    @IBOutlet weak var loginButtonOutlet: UIButton!
     @IBOutlet weak var passwordField: UITextField!
     @IBAction func loginButton(_ sender: UIButton) {
         if passwordField.text == "cufootball" {
@@ -31,7 +38,6 @@ class ViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
     }
-    
 
 }
 
