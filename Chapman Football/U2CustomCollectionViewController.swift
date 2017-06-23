@@ -19,7 +19,8 @@ class U2CustomCollectionViewController: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.collectionView?.backgroundColor = UIColor(red: 152/255, green: 1/255, blue: 46/255, alpha: 1)
+        //self.collectionView?.backgroundColor = UIColor(red: 152/255, green: 1/255, blue: 46/255, alpha: 1)
+        self.collectionView?.backgroundColor = UIColor.black
     }
     
     // MARK: UICollectionViewDataSource
