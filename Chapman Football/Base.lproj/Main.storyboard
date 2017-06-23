@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PSW-eO-oIL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PSW-eO-oIL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -129,37 +129,37 @@
                                                 <rect key="frame" x="176.5" y="0.0" width="166.5" height="192"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Squat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozK-1H-VZC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="166.5" height="31.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="166.5" height="32"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter max" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YP8-km-09C">
-                                                        <rect key="frame" x="0.0" y="31.5" width="166.5" height="32.5"/>
+                                                        <rect key="frame" x="0.0" y="32" width="166.5" height="31.5"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bench" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sR-y4-lM0">
-                                                        <rect key="frame" x="0.0" y="64" width="166.5" height="32"/>
+                                                        <rect key="frame" x="0.0" y="63.5" width="166.5" height="32.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter max" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rxr-eo-cdg">
-                                                        <rect key="frame" x="0.0" y="96" width="166.5" height="31.5"/>
+                                                        <rect key="frame" x="0.0" y="96" width="166.5" height="32"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clean" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhc-Rt-Bu6">
-                                                        <rect key="frame" x="0.0" y="127.5" width="166.5" height="32.5"/>
+                                                        <rect key="frame" x="0.0" y="128" width="166.5" height="31.5"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter max" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rmb-mW-m3e">
-                                                        <rect key="frame" x="0.0" y="160" width="166.5" height="32"/>
+                                                        <rect key="frame" x="0.0" y="159.5" width="166.5" height="32.5"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -218,10 +218,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="fEc-CO-IuC" secondAttribute="trailing" id="2a8-f9-pqE"/>
                             <constraint firstItem="3yH-5E-5zS" firstAttribute="top" secondItem="hMx-KH-osE" secondAttribute="bottom" id="8UK-Ix-sU2"/>
                             <constraint firstItem="fEc-CO-IuC" firstAttribute="top" secondItem="hMx-KH-osE" secondAttribute="bottom" id="9ez-Qw-lGH"/>
-                            <constraint firstItem="fEc-CO-IuC" firstAttribute="leading" secondItem="0Pi-Hd-gDA" secondAttribute="leadingMargin" id="MAr-vY-8TG"/>
                             <constraint firstItem="2n5-k0-Cnq" firstAttribute="top" secondItem="fEc-CO-IuC" secondAttribute="bottom" id="OfO-l2-JQj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3yH-5E-5zS" secondAttribute="trailing" id="YGZ-mp-Djg"/>
                             <constraint firstItem="fEc-CO-IuC" firstAttribute="top" secondItem="hMx-KH-osE" secondAttribute="bottom" id="eye-nl-i3C"/>

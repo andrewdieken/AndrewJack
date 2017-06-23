@@ -1066,12 +1066,12 @@ class WeekMultiplierDB {
     var W3L2S5 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     var W3L2S6 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     //**
-    var W3L2S1M = ["", " x5", " x3", " x3", " x2", " x10", " x5", " x5", " x10", " x10", "0.0", "0.0"]
+    var W3L2S1M = ["", " x5", " x3", " x3", " x2", " x10", " x5", " x5", "2 x 10", "2 x 10", "0.0", "0.0"]
     var W3L2S2M = ["", "", " x3", " x3", " x2", " x5", " x5", " x5", "0.0", "0.0", "0.0", "0.0"]
     var W3L2S3M = ["", "", " x3", " x3", " x2", " x5", " x5", " x5", "0.0", "0.0", "0.0", "0.0"]
     var W3L2S4M = ["", "", "", " x3", "", " x5", " x5", "", "0.0", "0.0", "0.0", "0.0"]
     var W3L2S5M = ["", "", "", "", "", "", "Box Jumps", "", "0.0", "0.0", "0.0", "0.0"]
-    var W3L2S6M = ["", "", "Record", "Record", "", "0.0", "Box Jumps", "", "0.0", "0.0", "0.0", "0.0"]
+    var W3L2S6M = ["", "", "Record", "Record", "", "0.0", "0.0", "", "0.0", "0.0", "0.0", "0.0"]
     //set variable to list of lowerbody 2 exercises 
     var W3L2Exercise = ["Exercise", "Combo OR Plate", "Power High Pull", "Power Clean", "Squat Clean", "Combo Clean", "Squat", "Ft. Squat", "DB Clean & Jerk", "Side Lunge", "RDL", "0.0", "0.0"]
     //upperbody 2
@@ -1082,7 +1082,7 @@ class WeekMultiplierDB {
     var W3U2S5 = [0.0, 0.0, 0, 0, 0, 0, 0, 0, 0.0]
     var W3U2S6 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0.0]
     //**
-    var W3U2S1M = ["", " 3x3", " x8", "4 x 5", " x5", " 3 x Fail", " 3 x 10", " 3 x Fail", " x8"]
+    var W3U2S1M = ["", " 3x3", " x8", "4 x 5", "4 x 5", " 3 x Fail", " 3 x 10", " 3 x Fail", " x8"]
     var W3U2S2M = ["", " 3x3", " x8", " x5", "0.0", " Superset", "0.0", "0.0", " x8"]
     var W3U2S3M = ["", " 3x3", " x8", " x5", "0.0", "0.0", "0.0", "0.0", " x8"]
     var W3U2S4M = ["", " 3x3", "", "", "0.0", "0.0", "0.0", "0.0", " x8"]
