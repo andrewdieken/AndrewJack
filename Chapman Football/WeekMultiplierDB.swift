@@ -989,7 +989,7 @@ class WeekMultiplierDB {
     var W2U1S5M = ["", " x8", "", "", "0.0", "", ""]
     var W2U1S6M = ["", "Last Max Reps", "", "", "0.0", "", ""]
     //set variable to upperbody 1 exercises 
-    var W2U1Exercise = ["Exercise", "Plate Warm Up", "Bench", "Incline BB or DB", "Snatch", "DB Bench", "Push Jerk", "Lat Pulls or Rows", "Supplemental Lifts"]
+    var W2U1Exercise = ["Exercise", "Plate Warm Up", "Bench", "Incline BB or DB", "Snatch", "DB Bench", "Push Jerk", "Lat Pulls or Rows", "Supp. Lifts"]
     //lowerbody 2
     var W2L2S1 = [0.0, 0.5, 0.6, 0.5, 0.5, 0.25, 0.5, 0.2, 0, 0, 0, 0]
     var W2L2S2 = [0.0, 0, 0.65, 0.55, 0.55, 0.75, 0.55, 0.2, 0, 0, 0, 0]
@@ -1043,7 +1043,7 @@ class WeekMultiplierDB {
     //set variable to list of upperbody 1 exercises 
     var W3L1Exercise = ["Exercise", "Combo OR Plate", "Power High Pull", "Power Clean", "Hang Clean", "DB Clean", "Squat", "RDL", "Overhead Lunges"]
     //upperbody 1
-    var W3U1S1 = [0.0, 0,78, 0.55, 0.45, 0, 0.45, 0]
+    var W3U1S1 = [0.0, 0.78, 0.55, 0.45, 0, 0.45, 0]
     var W3U1S2 = [0.0, 0.81, 0.6, 0.45, 0, 0.5, 0]
     var W3U1S3 = [0.0, 0.83, 0.65, 0.45, 0, 0.55, 0]
     var W3U1S4 = [0.0, 0.72, 0.65, 0.45, 0, 0, 0]
@@ -1057,7 +1057,7 @@ class WeekMultiplierDB {
     var W3U1S5M = ["", "Last Max Reps", "", "", "0.0", "", ""]
     var W3U1S6M = ["", "", "", "", "0.0", "", ""]
     //set variable to list of upperbody 1 exercises 
-    var W3U1Exercise = ["Exercise", "Plate Warm Up", "Bench", "Incline BB or DB", "Snatch", "DB Bench", "Push Jerk", "Rows", "Supplemental Lifts"]
+    var W3U1Exercise = ["Exercise", "Plate Warm Up", "Bench", "Incline BB or DB", "Snatch", "DB Bench", "Push Jerk", "Rows", "Supp. Lifts"]
     //lowerbody 2
     var W3L2S1 = [0.0, 0.5, 0.6, 0.55, 0.55, 0.6, 0.5, 0.25, 0, 0, 0, 0]
     var W3L2S2 = [0.0, 0, 0.65, 0.6, 0.6, 0.65, 0.55, 0.25, 0, 0, 0, 0]
@@ -1139,7 +1139,7 @@ class WeekMultiplierDB {
         "DB Bench",
         "Push Jerk",
         "Rows",
-        "Supplemental Lifts"]
+        "Supp. Lifts"]
     //lowerbody 2
     var W4L2S1 = [0.0, 0.5, 0.6, 0.55, 0.6, 0.6, 0.5, 0.2, 0, 0, 0, 0]
     var W4L2S2 = [0.0, 0, 0.65, 0.6, 0.65, 0.65, 0.55, 0.25, 0, 0, 0, 0]
@@ -1240,7 +1240,7 @@ class WeekMultiplierDB {
         "DB Bench",
         "Push Jerk",
         "Rows",
-        "Supplemental Lifts"]
+        "Supp. Lifts"]
     //lowerbody 2
     var W5L2S1 = [0.0, 0.5, 0.6, 0.55, 0.5, 0.6, 0.5, 0.2, 0, 0, 0, 0]
     var W5L2S2 = [0.0, 0, 0.65, 0.6, 0.55, 0.65, 0.55, 0.25, 0, 0, 0, 0]
@@ -1266,7 +1266,7 @@ class WeekMultiplierDB {
         "Ft. Squat",
         "DB Clean & Jerk",
         "Side Lunge",
-        "Overhead Lunges/DB RDL", "0.0", "0.0"]
+        "OVH L/DB RDL", "0.0", "0.0"]
     //upperbody 2
     var W5U2S1 = [0.0, 0.55, 0.5, 0.25, 0, 0, 0, 0, 0.4]
     var W5U2S2 = [0.0, 0.6, 0.55, 0.25, 0, 0, 0, 0, 0.4]
@@ -1340,7 +1340,7 @@ class WeekMultiplierDB {
         "DB Bench",
         "Push Jerk",
         "Rows",
-        "Supplemental Lifts"]
+        "Supp. Lifts"]
     //lowerbody 2
     var W6L2S1 = [0.0, 0.5, 0.6, 0.55, 0.55, 0.6, 0.5, 0.2, 0, 0, 0, 0]
     var W6L2S2 = [0.0, 0, 0.65, 0.6, 0.55, 0.65, 0.55, 0.25, 0, 0, 0, 0]
@@ -1366,7 +1366,7 @@ class WeekMultiplierDB {
         "Ft. Squat",
         "DB Clean & Jerk",
         "Side Lunge",
-        "Overhead Lunges/DB RDL", "0.0", "0.0"]
+        "OVH L/DB RDL", "0.0", "0.0"]
     //upperbody 2
     var W6U2S1 = [0.0, 0.52, 0.5, 0.25, 0, 0, 0, 0, 0.4]
     var W6U2S2 = [0.0, 0.57, 0.55, 0.25, 0, 0, 0, 0, 0.4]
@@ -1441,7 +1441,7 @@ class WeekMultiplierDB {
                         "DB Bench",
                         "Push Jerk",
                         "Rows",
-                        "Supplemental Lifts"]
+                        "Supp. Lifts"]
     //lowerbody 2
     var W7L2S1 = [0.0, 0.5, 0.6, 0.55, 0.55, 0.6, 0.55, 0.2, 0, 0, 0]
     var W7L2S2 = [0.0, 0, 0.65, 0.6, 0.6, 0.65, 0.6, 0.3, 0, 0, 0]
@@ -1542,7 +1542,7 @@ class WeekMultiplierDB {
                         "DB Bench",
                         "Push Jerk",
                         "Rows",
-                        "Supplemental Lifts"]
+                        "Supp. Lifts"]
     //lowerbody 2
     var W8L2S1 = [0.0, 0.5, 0.6, 0.55, 0.55, 0.6, 0.55, 0.25, 0, 0, 0, 0]
     var W8L2S2 = [0.0, 0, 0.65, 0.6, 0.6, 0.65, 0.6, 0.3, 0, 0, 0, 0]
@@ -1568,7 +1568,7 @@ class WeekMultiplierDB {
                         "Ft. Squat",
                         "DB Clean & Jerk",
                         "Side Lunge",
-                        "Overhead Lunges/DB RDL", "0.0", "0.0"]
+                        "OVH L/DB RDL", "0.0", "0.0"]
     //upperbody 2
     var W8U2S1 = [0.0, 0.52, 0.5, 0.25, 0, 0, 0, 0, 0.4]
     var W8U2S2 = [0.0, 0.57, 0.55, 0.25, 0, 0, 0, 0, 0.4]
@@ -1643,7 +1643,7 @@ class WeekMultiplierDB {
                         "DB Bench",
                         "Push Jerk",
                         "Rows",
-                        "Supplemental Lifts"]
+                        "Supp. Lifts"]
     //lowerbody 2
     var W9L2S1 = [0.0, 0.5, 0.6, 0.55, 0.55, 0.65, 0.55, 0.2, 0, 0, 0, 0]
     var W9L2S2 = [0.0, 0, 0.65, 0.6, 0.6, 0.7, 0.55, 0.3, 0, 0, 0, 0]
@@ -1657,7 +1657,7 @@ class WeekMultiplierDB {
     var W9L2S3M = ["", "", " x3", " x3", " x3", " x5", " x5", " x5", "0.0", "0.0", "0.0", "0.0"]
     var W9L2S4M = ["", "", "", " x3", "", " x5", " x3", "", "0.0", "0.0", "0.0", "0.0"]
     var W9L2S5M = ["", "", "", " x3", "", "Add Box Jumps", "Add Box Jumps", "", "0.0", "0.0", "0.0", "0.0"]
-    var W9L2S6M = ["", "", "", "", "", "Add Box Jumps", "Add Box Jumps", "", "0.0", "0.0", "0.0", "0.0"]
+    var W9L2S6M = ["", "", "", "0.0", "", "Add Box Jumps", "Add Box Jumps", "", "0.0", "0.0", "0.0", "0.0"]
     //set variable to list of lower2 exercises
     var W9L2Exercise = ["Exercise",
                         "Combo OR Plate",
@@ -1669,7 +1669,7 @@ class WeekMultiplierDB {
                         "Ft. Squat",
                         "DB Clean & Jerk",
                         "Side Lunge",
-                        "Overhead Lunges/DB RDL", "0.0", "0.0"]
+                        "OVH L/DB RDL", "0.0", "0.0"]
     //upperbody 2
     var W9U2S1 = [0.0, 0.5, 0.5, 0.25, 0, 0, 0, 0, 0.4]
     var W9U2S2 = [0.0, 0.55, 0.55, 0.25, 0, 0, 0, 0, 0.4]
@@ -1727,7 +1727,7 @@ class WeekMultiplierDB {
     var W10U1S5 = [0.0, 0.94, 0, 0, 0, 0, 0]
     var W10U1S6 = [0.0, 0.99, 0, 0, 0, 0, 0]
     //**
-    var W10U1S1M = ["", " x4", " x5", "Easy x5", "0.0", "", ""]
+    var W10U1S1M = ["", " x4", " x5", "Easy x5", "0.0", "", "0.0"]
     var W10U1S2M = ["", " x3", " x5", "Medium x5", "0.0", "", ""]
     var W10U1S3M = ["", " x2", " x5", "Hard x5", "0.0", "", ""]
     var W10U1S4M = ["", " x1", " x5", "Fail x5", "0.0", "", ""]
@@ -1820,7 +1820,7 @@ class WeekMultiplierDB {
         "DB Bench",
         "Push Jerk",
         "Rows",
-        "Supplemental Lifts"]
+        "Supp. Lifts"]
     //lowerbody 2
     var W11L2S1 = [0.0, 0.5, 0.55, 0.55, 0.55, 0.65, 0.55, 0.2, 0, 0, 0, 0]
     var W11L2S2 = [0.0, 0, 0.6, 0.6, 0.6, 0.7, 0.55, 0.3, 0, 0, 0, 0]
@@ -1846,9 +1846,9 @@ class WeekMultiplierDB {
         "Ft. Squat**",
         "DB Clean & Jerk",
         "Side Lunge",
-        "Overhead Lunges/DB RDL",
+        "OVH L/DB RDL",
         "** = OR",
-        "* = Work Down: Set1 PC, Set2 SC, Set3 C&J"]
+        "* = Work Down"]
     //upperbody 2
     var W11U2S1 = [0.0, 0.7, 0.5, 0.25, 0, 0, 0, 0, 0.4]
     var W11U2S2 = [0.0, 0.75, 0.55, 0.25, 0, 0, 0, 0, 0.4]
@@ -1923,7 +1923,7 @@ class WeekMultiplierDB {
         "DB Bench",
         "Push Jerk",
         "Rows",
-        "Supplemental Lifts"]
+        "Supp. Lifts"]
     //lowerbody 2
     var W12L2S1 = [0.0, 0.5, 0.55, 0.55, 0.55, 0.65, 0.55, 0.2, 0, 0, 0, 0]
     var W12L2S2 = [0.0, 0, 0.6, 0.6, 0.6, 0.7, 0.55, 0.3, 0, 0, 0, 0]
@@ -1949,9 +1949,9 @@ class WeekMultiplierDB {
         "Ft. Squat**",
         "DB Clean & Jerk",
         "Side Lunge",
-        "Overhead Lunges/DB RDL",
+        "OVH L/DB RDL",
         "** = OR",
-        "* = Work Down: Set1 PC, Set2 SC, Set3 C&J"]
+        "* = Work Down"]
     //upperbody 2
     var W12U2S1 = [0.0, 0.7, 0.5, 0.25, 0, 0, 0, 0, 0.4]
     var W12U2S2 = [0.0, 0.75, 0.55, 0.25, 0, 0, 0, 0, 0.4]

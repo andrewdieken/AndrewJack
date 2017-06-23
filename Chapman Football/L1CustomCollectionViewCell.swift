@@ -1,5 +1,6 @@
 import UIKit
 
+
 @IBDesignable
 class L1CustomCollectionViewCell: UICollectionViewCell {
     
@@ -19,5 +20,6 @@ class L1CustomCollectionViewCell: UICollectionViewCell {
         self.layer.borderWidth = 1.0
         self.layer.borderColor = UIColor.black.cgColor
         self.layer.cornerRadius = 5.0
+        
     }
 }
