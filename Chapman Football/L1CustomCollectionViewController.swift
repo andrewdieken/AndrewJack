@@ -4,6 +4,9 @@ let reuseIdentifier = "customCell"
 
 class L1CustomCollectionViewController: UICollectionViewController {
     
+    @IBAction func backButton(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
     
     // MARK: UICollectionViewDataSource
 

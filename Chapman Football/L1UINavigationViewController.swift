@@ -14,6 +14,7 @@ class L1UINavigationViewController: UINavigationController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationBar.topItem?.prompt = HomepageViewController.selectedWeek
+        navigationItem.leftBarButtonItem?.image = UIImage(named: "Back.png")
         // Do any additional setup after loading the view.
     }
 

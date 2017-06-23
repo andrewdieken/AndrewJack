@@ -4,6 +4,9 @@ import UIKit
 
 class U1CustomCollectionViewController: UICollectionViewController {
     
+    @IBAction func backBUtton(_ sender: UIBarButtonItem) {
+        dismiss(animated: true, completion: nil)
+    }
     
     // MARK: UICollectionViewDataSource
     

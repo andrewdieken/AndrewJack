@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PSW-eO-oIL">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="PSW-eO-oIL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -261,7 +261,7 @@
                     <navigationItem key="navigationItem" title="Lower Body I" id="7ac-f6-Ffz">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="DEi-j5-Ad4">
                             <connections>
-                                <segue destination="EKt-jU-anN" kind="presentation" id="UMR-QG-8GA"/>
+                                <action selector="backButton:" destination="UJd-mK-bmo" id="J8P-jy-IZP"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -295,7 +295,7 @@
             <objects>
                 <collectionViewController title="Collection" automaticallyAdjustsScrollViewInsets="NO" id="5FT-4n-GUh" userLabel="U1Collection" customClass="U1CustomCollectionViewController" customModule="Chapman_Football" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" directionalLockEnabled="YES" dataMode="prototypes" id="V4K-zO-q5l">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="64" width="375" height="559"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <inset key="scrollIndicatorInsets" minX="0.0" minY="20" maxX="0.0" maxY="0.0"/>
@@ -336,7 +336,7 @@
                     <navigationItem key="navigationItem" title="Upper Body I" id="2vn-El-A1I">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="ICz-mf-aS1">
                             <connections>
-                                <segue destination="EKt-jU-anN" kind="presentation" id="BKc-4U-23u"/>
+                                <action selector="backBUtton:" destination="5FT-4n-GUh" id="JZW-k7-6kr"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -411,7 +411,7 @@
                     <navigationItem key="navigationItem" title="Lower Body II" id="xAz-P7-88F">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="EzU-3C-x2T">
                             <connections>
-                                <segue destination="EKt-jU-anN" kind="presentation" id="8Gh-0e-xg5"/>
+                                <action selector="backButton:" destination="Dd5-8C-X7x" id="bes-vD-kgR"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -486,7 +486,7 @@
                     <navigationItem key="navigationItem" title="Upper Body II" id="25a-gi-rYC">
                         <barButtonItem key="leftBarButtonItem" title="Back" id="Tds-1n-EN3">
                             <connections>
-                                <segue destination="EKt-jU-anN" kind="presentation" id="ed4-R9-Wk4"/>
+                                <action selector="backButton:" destination="yaH-9t-KW6" id="XA0-zN-lxQ"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -499,7 +499,7 @@
         <!--Upper Body II-->
         <scene sceneID="6MT-MT-ro9">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XUV-Eq-3HG" userLabel="Upper Body II" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="XUV-Eq-3HG" userLabel="Upper Body II" customClass="L1UINavigationViewController" customModule="Chapman_Football" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="UPPERBODY ll" id="7Ix-ah-Iaa"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QBx-Ph-bLl">
@@ -513,13 +513,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ktH-EH-Dwu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3510" y="450"/>
+            <point key="canvasLocation" x="3510" y="449"/>
         </scene>
     </scenes>
     <resources>
         <image name="chapman_football_logo_placeholder" width="174" height="175"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="8Gh-0e-xg5"/>
-    </inferredMetricsTieBreakers>
 </document>
