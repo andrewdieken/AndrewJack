@@ -927,12 +927,12 @@ class WeekMultiplierDB {
     var W1L2S5 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     var W1L2S6 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
     //**
-    var W1L2S1M = ["", " x5", " x5", " x5", " x5", " x10", " x10", "", "0.0", "0.0", "0.0", "0.0"]
-    var W1L2S2M = ["", " x5", " x3", " x5", " x5", " x8", " x10", "", "0.0", "0.0", "0.0", "0.0"]
-    var W1L2S3M = ["", "", " x3", " x4", " x5", " x8", " x10", "", "0.0", "0.0", "0.0", "0.0"]
-    var W1L2S4M = ["", "", " x3", " x4", "", " x8", "", "", "0.0", "0.0", "0.0", "0.0"]
+    var W1L2S1M = ["", " x5", " x5", " x5", " x3", " x10", " x5", " x5", "2 x 10", "2 x 10", "0.0", "0.0"]
+    var W1L2S2M = ["", "", " x3", " x5", " x3", " x5", " x5", " x5", "0.0", "0.0", "0.0", "0.0"]
+    var W1L2S3M = ["", "", " x3", " x5", " x2", " x5", " x5", "", "0.0", "0.0", "0.0", "0.0"]
+    var W1L2S4M = ["", "", "", "", "", " x5", " x5", "", "0.0", "0.0", "0.0", "0.0"]
     var W1L2S5M = ["", "", "", "", "", "", "", "", "0.0", "0.0", "0.0", "0.0"]
-    var W1L2S6M = ["", "", "Record", "Record", "", "Record", "0.0", "", "0.0", "0.0", "0.0", "0.0"]
+    var W1L2S6M = ["", "", "Record", "Record", "", "Record", "0.0", "", "Box Jumps", "0.0", "0.0", "0.0"]
     //**set variable to list of lower 2 exercises
     var W1L2Exercise = ["Exercise", "Combo OR Plate", "Power High Pull", "Power Clean", "Squat Clean", "Combo Clean", "Squat**", "Ft. Squat**", "DB Clean & Jerk", "Side Lunge", "Overhead Lunges", "** = OR", "0.0"]
     

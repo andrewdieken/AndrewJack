@@ -89,9 +89,7 @@ class L1CustomCollectionViewController: UICollectionViewController {
                 if String(describing: list[i]) == "0.0Record" {
                     cell.label.text = "Record"
                 }
-                //if String(describing: list[i]) != "0.0Record" {
-                   // cell.label.text = String(describing: list[i])
-                //}
+         
                 
                 cell.label.text = String(describing: list[i])
             }
