@@ -186,10 +186,14 @@
                                     </pickerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJo-mo-4B1">
                                         <rect key="frame" x="0.0" y="507" width="343" height="50"/>
+                                        <color key="backgroundColor" red="0.59499901529999999" green="0.078367747370000004" blue="0.17894655470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="a27-1R-j6a"/>
                                         </constraints>
-                                        <state key="normal" title="SELECT"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="SELECT">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
                                         <connections>
                                             <action selector="selectButton:" destination="EKt-jU-anN" eventType="touchUpInside" id="nvI-hn-30o"/>
                                             <segue destination="RkW-kc-nYM" kind="show" id="hJs-pf-YOp"/>
@@ -234,6 +238,7 @@
                         <outlet property="benchInput" destination="Rxr-eo-cdg" id="Yhy-X3-Olw"/>
                         <outlet property="cleanInput" destination="Rmb-mW-m3e" id="dOI-Q6-hPP"/>
                         <outlet property="pickerView" destination="Vve-Dk-MgI" id="uP0-xO-sgD"/>
+                        <outlet property="selectButtonOutlet" destination="EJo-mo-4B1" id="STe-yW-98n"/>
                         <outlet property="squatInput" destination="YP8-km-09C" id="Kwu-xX-N2c"/>
                     </connections>
                 </viewController>
@@ -241,10 +246,10 @@
             </objects>
             <point key="canvasLocation" x="1550" y="-544"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="4fb-yW-IJZ">
             <objects>
-                <tabBarController id="RkW-kc-nYM" sceneMemberID="viewController">
+                <tabBarController id="RkW-kc-nYM" customClass="TabBarViewController" customModule="Chapman_Football" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="8G5-Gq-M06"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="WIH-qN-Lqu">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>

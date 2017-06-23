@@ -64,11 +64,15 @@ class HomepageViewController: UIViewController, UIPickerViewDataSource, UIPicker
             HomepageViewController.staticClean = 0
         }
     }
+    @IBOutlet weak var selectButtonOutlet: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         pickerView.delegate = self
         pickerView.dataSource = self
+        
+        selectButtonOutlet.layer.cornerRadius = 10
+        selectButtonOutlet.clipsToBounds = true
         // Do any additional setup after loading the view.
     }
 
