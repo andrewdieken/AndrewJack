@@ -8,6 +8,11 @@ class L1CustomCollectionViewController: UICollectionViewController {
         dismiss(animated: true, completion: nil)
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.collectionView?.backgroundColor = UIColor(red: 152/255, green: 1/255, blue: 46/255, alpha: 1)
+    }
+    
     // MARK: UICollectionViewDataSource
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {

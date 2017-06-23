@@ -20,6 +20,7 @@
 		B099F1AE1ED4A878009EFF1A /* Chapman_FootballTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B099F1AD1ED4A878009EFF1A /* Chapman_FootballTests.swift */; };
 		B099F1B91ED4A878009EFF1A /* Chapman_FootballUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B099F1B81ED4A878009EFF1A /* Chapman_FootballUITests.swift */; };
 		B099F1C71ED4BFF8009EFF1A /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B099F1C61ED4BFF8009EFF1A /* HomepageViewController.swift */; };
+		B0BC658E1EFD83AF00C62569 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BC658D1EFD83AF00C62569 /* TabBarViewController.swift */; };
 		B0E46C5C1ED6B566002E82C3 /* L1UINavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E46C5B1ED6B566002E82C3 /* L1UINavigationViewController.swift */; };
 		B0E46C5E1ED75642002E82C3 /* WeekMultiplierDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E46C5D1ED75642002E82C3 /* WeekMultiplierDB.swift */; };
 /* End PBXBuildFile section */
@@ -61,6 +62,7 @@
 		B099F1B81ED4A878009EFF1A /* Chapman_FootballUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapman_FootballUITests.swift; sourceTree = "<group>"; };
 		B099F1BA1ED4A878009EFF1A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B099F1C61ED4BFF8009EFF1A /* HomepageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HomepageViewController.swift; path = ../HomepageViewController.swift; sourceTree = "<group>"; };
+		B0BC658D1EFD83AF00C62569 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		B0E46C5B1ED6B566002E82C3 /* L1UINavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L1UINavigationViewController.swift; sourceTree = "<group>"; };
 		B0E46C5D1ED75642002E82C3 /* WeekMultiplierDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekMultiplierDB.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -114,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				B099F19C1ED4A878009EFF1A /* Main.storyboard */,
+				B0BC658D1EFD83AF00C62569 /* TabBarViewController.swift */,
 				B0E46C5D1ED75642002E82C3 /* WeekMultiplierDB.swift */,
 				B099F1981ED4A878009EFF1A /* AppDelegate.swift */,
 				B099F19A1ED4A878009EFF1A /* ViewController.swift */,
@@ -289,6 +292,7 @@
 				B000BBEB1EDE077E00181A65 /* L2CustomCollectionViewController.swift in Sources */,
 				B000BBED1EDE079000181A65 /* U2CustomCollectionViewController.swift in Sources */,
 				B0E46C5C1ED6B566002E82C3 /* L1UINavigationViewController.swift in Sources */,
+				B0BC658E1EFD83AF00C62569 /* TabBarViewController.swift in Sources */,
 				B0E46C5E1ED75642002E82C3 /* WeekMultiplierDB.swift in Sources */,
 				B099F1991ED4A878009EFF1A /* AppDelegate.swift in Sources */,
 				B0614A7C1ED4EE56007B05FA /* L1CustomCollectionViewCell.swift in Sources */,
