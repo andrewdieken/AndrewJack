@@ -25,20 +25,23 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="9dv-NZ-jHb">
                                 <rect key="frame" x="16" y="64" width="343" height="603"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chapman_football_logo_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="I2c-WU-6ao">
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Panther_Logo_2color" translatesAutoresizingMaskIntoConstraints="NO" id="I2c-WU-6ao">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="300"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="300" id="G9j-5e-ejA"/>
                                         </constraints>
                                     </imageView>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2dz-wg-nUa" userLabel="Password Field">
-                                        <rect key="frame" x="0.0" y="300" width="343" height="75"/>
+                                        <rect key="frame" x="0.0" y="300" width="343" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="bR8-Ls-2JB"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3HP-c3-Jqa">
-                                        <rect key="frame" x="0.0" y="375" width="343" height="228"/>
+                                        <rect key="frame" x="0.0" y="360" width="343" height="243"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Login"/>
                                         <connections>
@@ -78,50 +81,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3yH-5E-5zS">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fEc-CO-IuC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3yH-5E-5zS">
                                 <rect key="frame" x="16" y="20" width="343" height="647"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="USl-6J-QuM">
-                                        <rect key="frame" x="0.0" y="0.0" width="343" height="183"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="USl-6J-QuM">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="212"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chapman_football_logo_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="rcj-Ls-p5o">
-                                                <rect key="frame" x="0.0" y="0.0" width="171.5" height="183"/>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Panther_Logo_2color" translatesAutoresizingMaskIntoConstraints="NO" id="rcj-Ls-p5o">
+                                                <rect key="frame" x="0.0" y="0.0" width="166.5" height="212"/>
                                             </imageView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="OiR-rs-iK8">
-                                                <rect key="frame" x="171.5" y="0.0" width="171.5" height="183"/>
+                                                <rect key="frame" x="176.5" y="0.0" width="166.5" height="212"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Squat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozK-1H-VZC">
-                                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="30.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="166.5" height="35"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter max" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YP8-km-09C">
-                                                        <rect key="frame" x="0.0" y="30.5" width="171.5" height="30.5"/>
+                                                        <rect key="frame" x="0.0" y="35" width="166.5" height="35.5"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bench" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sR-y4-lM0">
-                                                        <rect key="frame" x="0.0" y="61" width="171.5" height="30.5"/>
+                                                        <rect key="frame" x="0.0" y="70.5" width="166.5" height="35"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter max" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rxr-eo-cdg">
-                                                        <rect key="frame" x="0.0" y="91.5" width="171.5" height="30.5"/>
+                                                        <rect key="frame" x="0.0" y="105.5" width="166.5" height="35"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clean" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhc-Rt-Bu6">
-                                                        <rect key="frame" x="0.0" y="122" width="171.5" height="31"/>
+                                                        <rect key="frame" x="0.0" y="140.5" width="166.5" height="36"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter max" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rmb-mW-m3e">
-                                                        <rect key="frame" x="0.0" y="153" width="171.5" height="30"/>
+                                                        <rect key="frame" x="0.0" y="176.5" width="166.5" height="35.5"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
@@ -140,8 +146,20 @@
                                             <constraint firstItem="OiR-rs-iK8" firstAttribute="width" secondItem="rcj-Ls-p5o" secondAttribute="width" id="QKV-oo-OKf"/>
                                         </constraints>
                                     </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BE THE LEGACY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AWE-Og-aKm">
+                                        <rect key="frame" x="0.0" y="232" width="343" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="s76-ly-auN"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Cochin-Bold" family="Cochin" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vve-Dk-MgI">
-                                        <rect key="frame" x="0.0" y="183" width="343" height="414"/>
+                                        <rect key="frame" x="0.0" y="302" width="343" height="275"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="275" id="LiO-7w-EOH"/>
+                                        </constraints>
                                     </pickerView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJo-mo-4B1">
                                         <rect key="frame" x="0.0" y="597" width="343" height="50"/>
@@ -159,9 +177,17 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="fEc-CO-IuC" secondAttribute="trailing" id="2a8-f9-pqE"/>
                             <constraint firstItem="3yH-5E-5zS" firstAttribute="top" secondItem="hMx-KH-osE" secondAttribute="bottom" id="8UK-Ix-sU2"/>
+                            <constraint firstItem="fEc-CO-IuC" firstAttribute="top" secondItem="hMx-KH-osE" secondAttribute="bottom" id="9ez-Qw-lGH"/>
+                            <constraint firstItem="fEc-CO-IuC" firstAttribute="leading" secondItem="0Pi-Hd-gDA" secondAttribute="leadingMargin" id="MAr-vY-8TG"/>
+                            <constraint firstItem="2n5-k0-Cnq" firstAttribute="top" secondItem="fEc-CO-IuC" secondAttribute="bottom" id="OfO-l2-JQj"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3yH-5E-5zS" secondAttribute="trailing" id="YGZ-mp-Djg"/>
+                            <constraint firstItem="fEc-CO-IuC" firstAttribute="top" secondItem="hMx-KH-osE" secondAttribute="bottom" id="eye-nl-i3C"/>
+                            <constraint firstItem="2n5-k0-Cnq" firstAttribute="top" secondItem="fEc-CO-IuC" secondAttribute="bottom" id="hIf-QD-G7v"/>
                             <constraint firstItem="3yH-5E-5zS" firstAttribute="leading" secondItem="0Pi-Hd-gDA" secondAttribute="leadingMargin" id="koi-yo-AU7"/>
+                            <constraint firstAttribute="trailing" secondItem="fEc-CO-IuC" secondAttribute="trailing" id="ol6-ez-aQs"/>
+                            <constraint firstItem="fEc-CO-IuC" firstAttribute="leading" secondItem="0Pi-Hd-gDA" secondAttribute="leading" id="snZ-JL-Zsd"/>
                             <constraint firstItem="2n5-k0-Cnq" firstAttribute="top" secondItem="3yH-5E-5zS" secondAttribute="bottom" id="vid-4r-ZHz"/>
                         </constraints>
                     </view>
@@ -517,6 +543,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="chapman_football_logo_placeholder" width="174" height="175"/>
+        <image name="Panther_Logo_2color" width="1000" height="1000"/>
     </resources>
 </document>
