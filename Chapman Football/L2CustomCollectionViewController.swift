@@ -294,10 +294,11 @@ class L2CustomCollectionViewController: UICollectionViewController {
                 fontSettings(list: list)
             }
             else if String(describing: w.L2S6M[5]) == "Add Box Jumps" {
+                let title = "Set 6"
                 let CoR = "0.0"
                 let PHP = String(HomepageViewController.staticClean * w.L2S6[1]) + String(describing: w.L2S6M[1])
                 let PC = String(HomepageViewController.staticClean * w.L2S6[2]) + String(describing: w.L2S6M[2])
-                let SC = String(HomepageViewController.staticClean * w.L2S6[3]) + String(describing: w.L2S6M[3])
+                let SC = String(describing: w.L2S6M[3])
                 let CC = String(HomepageViewController.staticClean * w.L2S6[4]) + String(describing: w.L2S6M[4])
                 let Squat = String(describing: w.L2S6M[5])
                 let FSquat = String(describing: w.L2S6M[6])
@@ -310,6 +311,7 @@ class L2CustomCollectionViewController: UICollectionViewController {
                 let list = [title, CoR, PHP, PC, SC, CC, Squat, FSquat, DBCJ, SL, OL, OR, WorkDown] as [Any]
                 fontSettings(list: list)
             }
+
             else {
                 let title = "Set 6"
                 let CoR = "0.0"
