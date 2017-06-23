@@ -35,14 +35,34 @@ class HomepageViewController: UIViewController, UIPickerViewDataSource, UIPicker
     static var staticSquat = 0.0
     static var staticBench = 0.0
     static var staticClean = 0.0
+    
+    var squat = 0
+    var bench = 0
+    var clean = 0
 
     @IBOutlet weak var squatInput: UITextField!
     @IBOutlet weak var benchInput: UITextField!
     @IBOutlet weak var cleanInput: UITextField!
     @IBAction func selectButton(_ sender: UIButton) {
-        HomepageViewController.staticSquat = Double(squatInput.text!)!
-        HomepageViewController.staticBench = Double(benchInput.text!)!
-        HomepageViewController.staticClean = Double(cleanInput.text!)!
+        if squatInput.text != "" {
+            HomepageViewController.staticSquat = Double(squatInput.text!)!
+        }
+        else {
+            HomepageViewController.staticSquat = 0
+        }
+        
+        if benchInput.text != "" {
+            HomepageViewController.staticBench = Double(benchInput.text!)!
+        }
+        else {
+            HomepageViewController.staticBench = 0
+        }
+        if cleanInput.text != "" {
+            HomepageViewController.staticClean = Double(cleanInput.text!)!
+        }
+        else {
+            HomepageViewController.staticClean = 0
+        }
     }
     
     override func viewDidLoad() {
