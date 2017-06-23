@@ -79,7 +79,7 @@ class U1CustomCollectionViewController: UICollectionViewController {
                 let Snatch = String(describing: w.U1S1M[3])
                 let DBB = String(describing: w.U1S1M[4])
                 let PJ = String(HomepageViewController.staticSquat * w.U1S1[5]) + String(describing: w.U1S1M[5])
-                let Rows = String(HomepageViewController.staticClean * w.U1S1[6]) + String(describing: w.U1S1M[6])
+                let Rows = String(describing: w.U1S1M[6])
                 let SL = 0.0
                 
                 let list = [title, PWU, Bench, INCL, Snatch, DBB, PJ, Rows, SL] as [Any]
@@ -94,7 +94,7 @@ class U1CustomCollectionViewController: UICollectionViewController {
                 let Snatch = String(HomepageViewController.staticClean * w.U1S1[3]) + String(describing: w.U1S1M[3])
                 let DBB = String(describing: w.U1S1M[4])
                 let PJ = String(HomepageViewController.staticSquat * w.U1S1[5]) + String(describing: w.U1S1M[5])
-                let Rows = String(HomepageViewController.staticClean * w.U1S1[6]) + String(describing: w.U1S1M[6])
+                let Rows = String(describing: w.U1S1M[6])
                 let SL = 0.0
                 
                 let list = [title, PWU, Bench, INCL, Snatch, DBB, PJ, Rows, SL] as [Any]

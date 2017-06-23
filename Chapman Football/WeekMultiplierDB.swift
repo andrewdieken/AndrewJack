@@ -910,7 +910,7 @@ class WeekMultiplierDB {
     var W1U1S5 = [0, 0.68, 0, 0, 0, 0, 0]
     var W1U1S6 = [0.0, 0, 0, 0, 0, 0, 0]
     //**
-    var W1U1S1M = ["", " x5", " x10", " x4", " Easy x5", " x5", " x10"]
+    var W1U1S1M = ["", " x5", " x10", " x4", " Easy x5", " x5", "3 x 10"]
     var W1U1S2M = ["", " x4", " x10", " x4", " Medium x5", " x5", ""]
     var W1U1S3M = ["", " x8", " x10", " x4", " Hard x5", " x5", ""]
     var W1U1S4M = ["", " x8", "", " x4", " Fail x5", "", ""]
@@ -982,7 +982,7 @@ class WeekMultiplierDB {
     var W2U1S5 = [0.0, 0.7, 0, 0, 0, 0, 0]
     var W2U1S6 = [0.0, 0, 0, 0, 0, 0, 0]
     //**
-    var W2U1S1M = ["", " x5", " x5", " x4", " Easy x5", " x5", " x10"]
+    var W2U1S1M = ["", " x5", " x5", " x4", " Easy x5", " x5", "3 x 10"]
     var W2U1S2M = ["", " x4", " x5", " x4", " Medium x5", " x5", ""]
     var W2U1S3M = ["", " x3", " x5", " x4", " Hard x5", " x5", ""]
     var W2U1S4M = ["", " x8", " x5", " x4", " Fail x5", "", ""]
@@ -1034,7 +1034,7 @@ class WeekMultiplierDB {
     var W3L1S5 = [0.0, 0, 0.7, 0, 0, 0.8, 0, 0]
     var W3L1S6 = [0.0, 0, 0, 0, 0, 0.8, 0, 0]
     //**
-    var W3L1S1M = ["", " x5", " x3", " x3", " x5", " x10", " x10", " 2x10"]
+    var W3L1S1M = ["", " x5", " x3", " x3", " x5", " x10", " x10", "2 x 10"]
     var W3L1S2M = ["", " x5", " x3", " x4", " x5", " x5", " x10", "0.0"]
     var W3L1S3M = ["", "", " x3", " x3", " x5", " x5", " x10", "0.0"]
     var W3L1S4M = ["", "", " x3", "", "", " x5", "", "0.0"]
@@ -1050,7 +1050,7 @@ class WeekMultiplierDB {
     var W3U1S5 = [0.0, 0, 0, 0, 0, 0, 0]
     var W3U1S6 = [0.0, 0, 0, 0, 0, 0, 0]
     //**
-    var W3U1S1M = ["", " x5", " x5", " x4", " Easy x5", " x5", " x10"]
+    var W3U1S1M = ["", " x5", " x5", " x4", " Easy x5", " x5", "3 x 10"]
     var W3U1S2M = ["", " x4", " x5", " x4", " Medium x5", " x5", ""]
     var W3U1S3M = ["", " x3", " x5", " x4", " Hard x5", " x5", ""]
     var W3U1S4M = ["", " x8", " x5", " x4", " Fail x5", "", ""]
@@ -1071,7 +1071,7 @@ class WeekMultiplierDB {
     var W3L2S3M = ["", "", " x3", " x3", " x2", " x5", " x5", " x5", "0.0", "0.0", "0.0", "0.0"]
     var W3L2S4M = ["", "", "", " x3", "", " x5", " x5", "", "0.0", "0.0", "0.0", "0.0"]
     var W3L2S5M = ["", "", "", "", "", "", "Box Jumps", "", "0.0", "0.0", "0.0", "0.0"]
-    var W3L2S6M = ["", "", "Record", "Record", "", "", "Box Jumps", "", "0.0", "0.0", "0.0", "0.0"]
+    var W3L2S6M = ["", "", "Record", "Record", "", "0.0", "Box Jumps", "", "0.0", "0.0", "0.0", "0.0"]
     //set variable to list of lowerbody 2 exercises 
     var W3L2Exercise = ["Exercise", "Combo OR Plate", "Power High Pull", "Power Clean", "Squat Clean", "Combo Clean", "Squat", "Ft. Squat", "DB Clean & Jerk", "Side Lunge", "RDL", "0.0", "0.0"]
     //upperbody 2
@@ -1124,7 +1124,7 @@ class WeekMultiplierDB {
     var W4U1S5 = [0.0, 0.74, 0, 0, 0, 0, 0]
     var W4U1S6 = [0.0, 0.74, 0, 0, 0, 0, 0]
     //**
-    var W4U1S1M = ["", " x4", " x5", " x4", " Easy x5", " x5", " x10"]
+    var W4U1S1M = ["", " x4", " x5", " x4", " Easy x5", " x5", "3 x 10"]
     var W4U1S2M = ["", " x3", " x5", " x4", " Medium x5", " x5", ""]
     var W4U1S3M = ["", " x6", " x5", " x4", " Hard x5", " x5", ""]
     var W4U1S4M = ["", " x6", " x5", " x4", " Fail x5", "", ""]
@@ -1225,7 +1225,7 @@ class WeekMultiplierDB {
     var W5U1S5 = [0.0, 0.76, 0, 0, 0, 0, 0]
     var W5U1S6 = [0.0, 0.76, 0, 0, 0, 0, 0]
     //**
-    var W5U1S1M = ["", " x3", " x5", " x4", " Easy x5", " x5", " x10"]
+    var W5U1S1M = ["", " x3", " x5", " x4", " Easy x5", " x5", "3 x 10"]
     var W5U1S2M = ["", " x2", " x5", " x4", " Medium x5", " x5", ""]
     var W5U1S3M = ["", " x1", " x5", " x4", " Hard x5", " x5", ""]
     var W5U1S4M = ["", " x6", " x5", " x4", " Fail x5", "", ""]
@@ -1325,7 +1325,7 @@ class WeekMultiplierDB {
     var W6U1S5 = [0.0, 0.78, 0, 0, 0, 0, 0]
     var W6U1S6 = [0.0, 0.78, 0, 0, 0, 0, 0]
     //**
-    var W6U1S1M = ["", " x4", " x5", " x4", " Easy x5", " x5", " x10"]
+    var W6U1S1M = ["", " x4", " x5", " x4", " Easy x5", " x5", "3 x 10"]
     var W6U1S2M = ["", " x3", " x5", " x4", " Medium x5", " x5", ""]
     var W6U1S3M = ["", " x2", " x5", " x4", " Hard x5", " x5", ""]
     var W6U1S4M = ["", " x1", " x5", " x4", " Fail x5", "", ""]
@@ -1426,7 +1426,7 @@ class WeekMultiplierDB {
     var W7U1S5 = [0.0, 0.8, 0, 0, 0, 0, 0, 0]
     var W7U1S6 = [0.0, 0.8, 0, 0, 0, 0, 0, 0]
     //**
-    var W7U1S1M = ["", " x3", " x5", " x4", " Easy x5", " x5", " x10", ""]
+    var W7U1S1M = ["", " x3", " x5", " x4", " Easy x5", " x5", "3 x 10", ""]
     var W7U1S2M = ["", " x2", " x5", " x4", " Medium x5", " x5", "", ""]
     var W7U1S3M = ["", " x4", " x5", " x4", " Hard x5", " x5", "", ""]
     var W7U1S4M = ["", " x4", " x5", " x4", " Fail x5", "", "", ""]
@@ -1476,7 +1476,7 @@ class WeekMultiplierDB {
     var W7U2S5 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0]
     var W7U2S6 = [0.0, 0, 0, 0, 0, 0, 0, 0, 0]
     //**
-    var W7U2S1M = ["", " 3x3", " x8", " x5", " x5", " 3 x Fail", " 3 x 10", " 3 x Fail", " x8"]
+    var W7U2S1M = ["", " 3x3", " x8", " x5", "4 x 5", " 3 x Fail", " 3 x 10", " 3 x Fail", " x8"]
     var W7U2S2M = ["", " 3x3", " x8", " x5", "0.0", "Superset", "0.0", "0.0", " x8"]
     var W7U2S3M = ["", " 3x3", " x8", " x5", "0.0", "0.0", "0.0", "0.0", " x8"]
     var W7U2S4M = ["", " 3x3", "", "", "0.0", "0.0", "0.0", "0.0", " x8"]
@@ -1527,7 +1527,7 @@ class WeekMultiplierDB {
     var W8U1S5 = [0.0, 0.82, 0, 0, 0, 0, 0]
     var W8U1S6 = [0.0, 0.82, 0, 0, 0, 0, 0]
     //**
-    var W8U1S1M = ["", " x3", " x5", " x4", " Easy x5", " x5", " x10"]
+    var W8U1S1M = ["", " x3", " x5", " x4", " Easy x5", " x5", "3 x 10"]
     var W8U1S2M = ["", " x2", " x5", " x4", " Medium x5", " x5", ""]
     var W8U1S3M = ["", " x1", " x5", " x4", " Hard x5", " x5", ""]
     var W8U1S4M = ["", " x4", " x5", " x4", " Fail x5", "", ""]
@@ -1628,7 +1628,7 @@ class WeekMultiplierDB {
     var W9U1S5 = [0.0, 0.84, 0, 0, 0, 0, 0]
     var W9U1S6 = [0.0, 0.84, 0, 0, 0, 0, 0]
     //**
-    var W9U1S1M = ["", " x3", " x5", " x4", " Easy x5", " x5", " x10"]
+    var W9U1S1M = ["", " x3", " x5", " x4", " Easy x5", " x5", "3 x 10"]
     var W9U1S2M = ["", " x2", " x5", " x4", " Medium x5", " x5", ""]
     var W9U1S3M = ["", " x1", " x5", " x4", " Hard x5", " x5", ""]
     var W9U1S4M = ["", " x1", " x5", " x4", " Fail x5", "", ""]
@@ -1805,7 +1805,7 @@ class WeekMultiplierDB {
     var W11U1S5 = [0.0, 0.85, 0, 0, 0, 0, 0]
     var W11U1S6 = [0.0, 0, 0, 0, 0, 0, 0]
     //**
-    var W11U1S1M = ["", " x5", " x5", " x4", "Easy x5", " x5", " x10"]
+    var W11U1S1M = ["", " x5", " x5", " x4", "Easy x5", " x5", "3 x 10"]
     var W11U1S2M = ["", " x5", " x5", " x4", "Medium x5", " x5", ""]
     var W11U1S3M = ["", " x5", " x5", " x4", "Hard x5", " x5", ""]
     var W11U1S4M = ["", " x5", " x5", " x4", "Fail x5", "", ""]
@@ -1908,7 +1908,7 @@ class WeekMultiplierDB {
     var W12U1S5 = [0.0, 0.85, 0, 0, 0, 0, 0]
     var W12U1S6 = [0.0, 0, 0, 0, 0, 0, 0]
     //**
-    var W12U1S1M = ["", " x5", " x5", " x4", "Easy x5", " x5", " x10"]
+    var W12U1S1M = ["", " x5", " x5", " x4", "Easy x5", " x5", "3 x 10"]
     var W12U1S2M = ["", " x5", " x5", " x4", "Medium x5", " x5", ""]
     var W12U1S3M = ["", " x5", " x5", " x4", "Hard x5", " x5", ""]
     var W12U1S4M = ["", " x5", " x5", " x4", "Fail x5", "", ""]

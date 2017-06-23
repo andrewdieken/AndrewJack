@@ -70,7 +70,7 @@ class U2CustomCollectionViewController: UICollectionViewController {
                 }
                 
                 if String(describing: list[i]) != "Max Reps" && i != 0 {
-                    cell.label.font = UIFont.systemFont(ofSize: 12.0)
+                cell.label.font = UIFont.systemFont(ofSize: 12.0)
                 }
                 
                 if String(describing: list[i]) == "0.0Superset" {
