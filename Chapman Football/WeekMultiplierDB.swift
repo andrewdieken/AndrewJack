@@ -951,7 +951,7 @@ class WeekMultiplierDB {
     var W1U2S5M = ["", "Record", "", "", "0.0", "0.0", "0.0", "0.0", ""]
     var W1U2S6M = ["", "", "", "", "0.0", "", "", "0.0", ""]
     //Exercise List 
-    var W1U2Exercise = ["Exercise", "Plate Warm Up", "3x3 Bench", "Incline BB or DB", "DB Snath", "DB Bench", "Dips/Push dwn", "Lat Pull or Rows", "Box Push-ups", "Bent Row"]
+    var W1U2Exercise = ["Exercise", "Plate Warm Up", "3x3 Bench", "Incline BB or DB", "DB Snatch", "DB Bench", "Dips/Push dwn", "Lat Pull or Rows", "Box Push-ups", "Bent Row"]
     
     
     
