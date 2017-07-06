@@ -11,6 +11,8 @@ import FirebaseDatabase
 
 class ViewController: UIViewController, UITextFieldDelegate {
 
+    let defaultUsername = UserDefaults.standard
+
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.keyboardWillShow), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
@@ -18,6 +20,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.emailField.delegate = self
         loginButtonOutlet.layer.cornerRadius = 10
         loginButtonOutlet.clipsToBounds = true
+        
+
+        if defaultUsername.bool(forKey: "loggedIn") {
+            emailField.text = defaultUsername.value(forKey: "email") as? String
+            confirmEmailField.text = defaultUsername.value(forKey: "email") as? String
+        }
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     
@@ -57,6 +66,11 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func loginButton(_ sender: UIButton) {
         if emailField.text == confirmEmailField.text {
             staticUsername.username = emailField.text!
+            let email:String? = emailField.text
+            let confirmEmail:String? = emailField.text
+            defaultUsername.set(email, forKey: "email")
+            defaultUsername.set(confirmEmail, forKey: "confirmEmail")
+            defaultUsername.set(true, forKey: "loggedIn")
             self.performSegue(withIdentifier: "Homepage", sender: self)
         }
         else {
