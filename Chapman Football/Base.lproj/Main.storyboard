@@ -32,34 +32,52 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQT-4p-ltc">
-                                        <rect key="frame" x="0.0" y="300" width="343" height="80"/>
+                                        <rect key="frame" x="0.0" y="300" width="343" height="60"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="80" id="8eU-ke-KLZ"/>
+                                            <constraint firstAttribute="height" constant="60" id="8eU-ke-KLZ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2dz-wg-nUa" userLabel="Password Field">
-                                        <rect key="frame" x="0.0" y="380" width="343" height="60"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Chapman ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2dz-wg-nUa" userLabel="Email Field">
+                                        <rect key="frame" x="0.0" y="360" width="343" height="60"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="bR8-Ls-2JB"/>
                                         </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                        <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="no"/>
+                                    </textField>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAn-48-DDZ">
+                                        <rect key="frame" x="0.0" y="420" width="343" height="10"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="10" id="SBQ-Cw-3Ul"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm Chapman ID" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v2b-1t-V8E" userLabel="Re-type Email Field">
+                                        <rect key="frame" x="0.0" y="430" width="343" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="rh7-S4-K4q"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="no"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ssy-aP-vhy">
-                                        <rect key="frame" x="0.0" y="440" width="343" height="40"/>
+                                        <rect key="frame" x="0.0" y="490" width="343" height="20"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="8qa-af-kfh"/>
+                                            <constraint firstAttribute="height" constant="20" id="8qa-af-kfh"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3HP-c3-Jqa">
-                                        <rect key="frame" x="0.0" y="480" width="343" height="50"/>
+                                        <rect key="frame" x="0.0" y="510" width="343" height="50"/>
                                         <color key="backgroundColor" red="0.59499901529999999" green="0.078367747370000004" blue="0.17894655470000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="i5n-lT-qnk"/>
@@ -74,7 +92,7 @@
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UMl-nG-Q8p">
-                                        <rect key="frame" x="0.0" y="530" width="343" height="73"/>
+                                        <rect key="frame" x="0.0" y="560" width="343" height="43"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -92,8 +110,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="5vq-wC-DPS"/>
                     <connections>
+                        <outlet property="confirmEmailField" destination="v2b-1t-V8E" id="FyX-PB-lzZ"/>
+                        <outlet property="emailField" destination="2dz-wg-nUa" id="Fp9-eQ-czF"/>
                         <outlet property="loginButtonOutlet" destination="3HP-c3-Jqa" id="Wwx-Lm-DSB"/>
-                        <outlet property="passwordField" destination="2dz-wg-nUa" id="Fp9-eQ-czF"/>
                         <segue destination="EKt-jU-anN" kind="modal" identifier="Homepage" id="ASF-ai-R6e"/>
                     </connections>
                 </viewController>
@@ -138,7 +157,7 @@
                                                         <rect key="frame" x="0.0" y="32" width="166.5" height="32"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bench" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8sR-y4-lM0">
                                                         <rect key="frame" x="0.0" y="64" width="166.5" height="32.5"/>
@@ -150,7 +169,7 @@
                                                         <rect key="frame" x="0.0" y="96.5" width="166.5" height="32"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clean" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhc-Rt-Bu6">
                                                         <rect key="frame" x="0.0" y="128.5" width="166.5" height="31.5"/>
@@ -162,7 +181,7 @@
                                                         <rect key="frame" x="0.0" y="160" width="166.5" height="32"/>
                                                         <nil key="textColor"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
+                                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                                     </textField>
                                                 </subviews>
                                                 <constraints>

@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57EA764A1CF5B06C2E2F00FE /* Pods_Chapman_Football.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CB8D1FBC67CC49024EF867 /* Pods_Chapman_Football.framework */; };
+		A982247FB426C0A24BB5FCE5 /* Pods_Chapman_FootballTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93615BF5EA23892E19FFA363 /* Pods_Chapman_FootballTests.framework */; };
 		B000BBEB1EDE077E00181A65 /* L2CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000BBEA1EDE077E00181A65 /* L2CustomCollectionViewController.swift */; };
 		B000BBED1EDE079000181A65 /* U2CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000BBEC1EDE079000181A65 /* U2CustomCollectionViewController.swift */; };
+		B02A6EAE1F0EC6EC00F8EAC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B02A6EAD1F0EC6EC00F8EAC1 /* GoogleService-Info.plist */; };
+		B02A6EAF1F0EC6EC00F8EAC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B02A6EAD1F0EC6EC00F8EAC1 /* GoogleService-Info.plist */; };
+		B02A6EB01F0EC6EC00F8EAC1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B02A6EAD1F0EC6EC00F8EAC1 /* GoogleService-Info.plist */; };
 		B05D33A31EDDE5CD00D9DF6D /* U1CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B05D33A21EDDE5CD00D9DF6D /* U1CustomCollectionViewController.swift */; };
 		B0614A7B1ED4EE56007B05FA /* L1CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0614A781ED4EE56007B05FA /* L1CustomCollectionViewController.swift */; };
 		B0614A7C1ED4EE56007B05FA /* L1CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0614A791ED4EE56007B05FA /* L1CustomCollectionViewCell.swift */; };
@@ -23,6 +28,7 @@
 		B0BC658E1EFD83AF00C62569 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BC658D1EFD83AF00C62569 /* TabBarViewController.swift */; };
 		B0E46C5C1ED6B566002E82C3 /* L1UINavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E46C5B1ED6B566002E82C3 /* L1UINavigationViewController.swift */; };
 		B0E46C5E1ED75642002E82C3 /* WeekMultiplierDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E46C5D1ED75642002E82C3 /* WeekMultiplierDB.swift */; };
+		C2C055E2E2934D13CF9F5C97 /* Pods_Chapman_FootballUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9595BACE3D15F40BDBF757 /* Pods_Chapman_FootballUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,8 +49,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09CB8D1FBC67CC49024EF867 /* Pods_Chapman_Football.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chapman_Football.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		204896E78578D6001CE8499A /* Pods-Chapman FootballTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chapman FootballTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chapman FootballTests/Pods-Chapman FootballTests.release.xcconfig"; sourceTree = "<group>"; };
+		4ACE99175155BF48F852DCF2 /* Pods-Chapman FootballTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chapman FootballTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chapman FootballTests/Pods-Chapman FootballTests.debug.xcconfig"; sourceTree = "<group>"; };
+		64773E90D1815D653DC554B9 /* Pods-Chapman FootballUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chapman FootballUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chapman FootballUITests/Pods-Chapman FootballUITests.release.xcconfig"; sourceTree = "<group>"; };
+		93615BF5EA23892E19FFA363 /* Pods_Chapman_FootballTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chapman_FootballTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A976B5BAE63ED10EEFBB6717 /* Pods-Chapman Football.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chapman Football.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chapman Football/Pods-Chapman Football.debug.xcconfig"; sourceTree = "<group>"; };
 		B000BBEA1EDE077E00181A65 /* L2CustomCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L2CustomCollectionViewController.swift; sourceTree = "<group>"; };
 		B000BBEC1EDE079000181A65 /* U2CustomCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = U2CustomCollectionViewController.swift; sourceTree = "<group>"; };
+		B02A6EAD1F0EC6EC00F8EAC1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B05D33A21EDDE5CD00D9DF6D /* U1CustomCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = U1CustomCollectionViewController.swift; sourceTree = "<group>"; };
 		B0614A781ED4EE56007B05FA /* L1CustomCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L1CustomCollectionViewController.swift; sourceTree = "<group>"; };
 		B0614A791ED4EE56007B05FA /* L1CustomCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L1CustomCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -65,6 +78,9 @@
 		B0BC658D1EFD83AF00C62569 /* TabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		B0E46C5B1ED6B566002E82C3 /* L1UINavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = L1UINavigationViewController.swift; sourceTree = "<group>"; };
 		B0E46C5D1ED75642002E82C3 /* WeekMultiplierDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekMultiplierDB.swift; sourceTree = "<group>"; };
+		CF9595BACE3D15F40BDBF757 /* Pods_Chapman_FootballUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chapman_FootballUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3F3056EE828C77DE76E1BEA /* Pods-Chapman FootballUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chapman FootballUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chapman FootballUITests/Pods-Chapman FootballUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		EB0DE9D27C02CD725C038A60 /* Pods-Chapman Football.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chapman Football.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chapman Football/Pods-Chapman Football.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57EA764A1CF5B06C2E2F00FE /* Pods_Chapman_Football.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A982247FB426C0A24BB5FCE5 /* Pods_Chapman_FootballTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +104,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2C055E2E2934D13CF9F5C97 /* Pods_Chapman_FootballUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F7B900CFD44CDDC5BDBFF14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09CB8D1FBC67CC49024EF867 /* Pods_Chapman_Football.framework */,
+				93615BF5EA23892E19FFA363 /* Pods_Chapman_FootballTests.framework */,
+				CF9595BACE3D15F40BDBF757 /* Pods_Chapman_FootballUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B099F18C1ED4A878009EFF1A = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +128,8 @@
 				B099F1AC1ED4A878009EFF1A /* Chapman FootballTests */,
 				B099F1B71ED4A878009EFF1A /* Chapman FootballUITests */,
 				B099F1961ED4A878009EFF1A /* Products */,
+				BCF92763C573C9516D594DCC /* Pods */,
+				9F7B900CFD44CDDC5BDBFF14 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +154,7 @@
 				B099F1C61ED4BFF8009EFF1A /* HomepageViewController.swift */,
 				B099F19F1ED4A878009EFF1A /* Assets.xcassets */,
 				B099F1A41ED4A878009EFF1A /* Info.plist */,
+				B02A6EAD1F0EC6EC00F8EAC1 /* GoogleService-Info.plist */,
 				B0614A781ED4EE56007B05FA /* L1CustomCollectionViewController.swift */,
 				B05D33A21EDDE5CD00D9DF6D /* U1CustomCollectionViewController.swift */,
 				B000BBEA1EDE077E00181A65 /* L2CustomCollectionViewController.swift */,
@@ -152,6 +184,19 @@
 			path = "Chapman FootballUITests";
 			sourceTree = "<group>";
 		};
+		BCF92763C573C9516D594DCC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A976B5BAE63ED10EEFBB6717 /* Pods-Chapman Football.debug.xcconfig */,
+				EB0DE9D27C02CD725C038A60 /* Pods-Chapman Football.release.xcconfig */,
+				4ACE99175155BF48F852DCF2 /* Pods-Chapman FootballTests.debug.xcconfig */,
+				204896E78578D6001CE8499A /* Pods-Chapman FootballTests.release.xcconfig */,
+				D3F3056EE828C77DE76E1BEA /* Pods-Chapman FootballUITests.debug.xcconfig */,
+				64773E90D1815D653DC554B9 /* Pods-Chapman FootballUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -159,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B099F1BD1ED4A878009EFF1A /* Build configuration list for PBXNativeTarget "Chapman Football" */;
 			buildPhases = (
+				4DC400BC56CBC65130012476 /* [CP] Check Pods Manifest.lock */,
 				B099F1911ED4A878009EFF1A /* Sources */,
 				B099F1921ED4A878009EFF1A /* Frameworks */,
 				B099F1931ED4A878009EFF1A /* Resources */,
+				54F420B8C178AA2ACFF921FB /* [CP] Embed Pods Frameworks */,
+				58B8274F8C48934045A89245 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B099F1C01ED4A878009EFF1A /* Build configuration list for PBXNativeTarget "Chapman FootballTests" */;
 			buildPhases = (
+				62440D16FBD705EC379CEB5B /* [CP] Check Pods Manifest.lock */,
 				B099F1A51ED4A878009EFF1A /* Sources */,
 				B099F1A61ED4A878009EFF1A /* Frameworks */,
 				B099F1A71ED4A878009EFF1A /* Resources */,
+				EA08C181B3D528A5D89D4529 /* [CP] Embed Pods Frameworks */,
+				E596D41B9E644219266746B2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,9 +245,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B099F1C31ED4A878009EFF1A /* Build configuration list for PBXNativeTarget "Chapman FootballUITests" */;
 			buildPhases = (
+				3CBE5F24053C48AF2909C568 /* [CP] Check Pods Manifest.lock */,
 				B099F1B01ED4A878009EFF1A /* Sources */,
 				B099F1B11ED4A878009EFF1A /* Frameworks */,
 				B099F1B21ED4A878009EFF1A /* Resources */,
+				5C105E887DE9EA2DE5511453 /* [CP] Embed Pods Frameworks */,
+				1D4165A6B5504C2F4D035F88 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -220,7 +274,7 @@
 				TargetAttributes = {
 					B099F1941ED4A878009EFF1A = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = D5GTMK5VKL;
+						DevelopmentTeam = JMXC22BSHX;
 						ProvisioningStyle = Automatic;
 					};
 					B099F1A81ED4A878009EFF1A = {
@@ -264,6 +318,7 @@
 			files = (
 				B099F1A01ED4A878009EFF1A /* Assets.xcassets in Resources */,
 				B099F19E1ED4A878009EFF1A /* Main.storyboard in Resources */,
+				B02A6EAE1F0EC6EC00F8EAC1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +326,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02A6EAF1F0EC6EC00F8EAC1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,10 +334,149 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B02A6EB01F0EC6EC00F8EAC1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1D4165A6B5504C2F4D035F88 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chapman FootballUITests/Pods-Chapman FootballUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3CBE5F24053C48AF2909C568 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4DC400BC56CBC65130012476 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		54F420B8C178AA2ACFF921FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chapman Football/Pods-Chapman Football-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58B8274F8C48934045A89245 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chapman Football/Pods-Chapman Football-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C105E887DE9EA2DE5511453 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chapman FootballUITests/Pods-Chapman FootballUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		62440D16FBD705EC379CEB5B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E596D41B9E644219266746B2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chapman FootballTests/Pods-Chapman FootballTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA08C181B3D528A5D89D4529 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Chapman FootballTests/Pods-Chapman FootballTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		B099F1911ED4A878009EFF1A /* Sources */ = {
@@ -441,12 +636,13 @@
 		};
 		B099F1BE1ED4A878009EFF1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A976B5BAE63ED10EEFBB6717 /* Pods-Chapman Football.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D5GTMK5VKL;
+				DEVELOPMENT_TEAM = JMXC22BSHX;
 				INFOPLIST_FILE = "Chapman Football/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ChapmanSE.Chapman-Football";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChapmanSE.ChapmanFootball;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -454,12 +650,13 @@
 		};
 		B099F1BF1ED4A878009EFF1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EB0DE9D27C02CD725C038A60 /* Pods-Chapman Football.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = D5GTMK5VKL;
+				DEVELOPMENT_TEAM = JMXC22BSHX;
 				INFOPLIST_FILE = "Chapman Football/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ChapmanSE.Chapman-Football";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChapmanSE.ChapmanFootball;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -467,6 +664,7 @@
 		};
 		B099F1C11ED4A878009EFF1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ACE99175155BF48F852DCF2 /* Pods-Chapman FootballTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +680,7 @@
 		};
 		B099F1C21ED4A878009EFF1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 204896E78578D6001CE8499A /* Pods-Chapman FootballTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -497,6 +696,7 @@
 		};
 		B099F1C41ED4A878009EFF1A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3F3056EE828C77DE76E1BEA /* Pods-Chapman FootballUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = D5GTMK5VKL;
@@ -511,6 +711,7 @@
 		};
 		B099F1C51ED4A878009EFF1A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 64773E90D1815D653DC554B9 /* Pods-Chapman FootballUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = D5GTMK5VKL;

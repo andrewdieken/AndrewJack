@@ -7,8 +7,16 @@
 //
 
 import UIKit
+import FirebaseDatabase
 
-class HomepageViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class HomepageViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
+    
+    var VC = ViewController()
+    
+    var ref:DatabaseReference!
+    var databaseHandle:DatabaseHandle!
+    
+    var staticData = [Int]()
     
     @IBOutlet weak var pickerView: UIPickerView!
     
@@ -39,7 +47,22 @@ class HomepageViewController: UIViewController, UIPickerViewDataSource, UIPicker
     var squat = 0
     var bench = 0
     var clean = 0
+    
+    func textFieldShouldReturn(_ squatInput: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldReturn1(_ benchInput: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
 
+    func textFieldShouldReturn2(_ cleanInput: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return true
+    }
+    
     @IBOutlet weak var squatInput: UITextField!
     @IBOutlet weak var benchInput: UITextField!
     @IBOutlet weak var cleanInput: UITextField!
@@ -63,6 +86,12 @@ class HomepageViewController: UIViewController, UIPickerViewDataSource, UIPicker
         else {
             HomepageViewController.staticClean = 0
         }
+        
+        //Firebase
+        ref?.child(ViewController.staticUsername.username).child("Squat").setValue(HomepageViewController.staticSquat)
+        ref?.child(ViewController.staticUsername.username).child("Clean").setValue(HomepageViewController.staticClean)
+        ref?.child(ViewController.staticUsername.username).child("Bench").setValue(HomepageViewController.staticBench)
+        
     }
     @IBOutlet weak var selectButtonOutlet: UIButton!
     
@@ -70,12 +99,33 @@ class HomepageViewController: UIViewController, UIPickerViewDataSource, UIPicker
         super.viewDidLoad()
         pickerView.delegate = self
         pickerView.dataSource = self
-        
+        self.squatInput.delegate = self
+        self.benchInput.delegate = self
+        self.cleanInput.delegate = self
         selectButtonOutlet.layer.cornerRadius = 10
         selectButtonOutlet.clipsToBounds = true
-        // Do any additional setup after loading the view.
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(HomepageViewController.dismissKeyboard))
+        view.addGestureRecognizer(tap)
+        
+        //Firebase Databse Reference
+        ref = Database.database().reference()
+        
+        //Read Database
+        ref.child(ViewController.staticUsername.username).observeSingleEvent(of: .value, with: { (snapshot) in
+            let snapValue = snapshot.value!
+            if let tempData = snapValue as? [String:Int] {
+                self.squatInput.text = String(describing: (tempData["Squat"])!)
+                self.benchInput.text = String(describing: (tempData["Bench"])!)
+                self.cleanInput.text = String(describing: (tempData["Clean"])!)
+            }
+        })
     }
 
+    func dismissKeyboard() {
+        //Causes the view (or one of its embedded text fields) to resign the first responder status.
+        view.endEditing(true)
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
