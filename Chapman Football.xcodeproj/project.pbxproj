@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1AF5988B1F2BF9020008AB2F /* Section.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF5988A1F2BF9020008AB2F /* Section.swift */; };
+		1AF5988D1F2BF9C60008AB2F /* ExpandableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF5988C1F2BF9C60008AB2F /* ExpandableHeaderView.swift */; };
+		1AF5988F1F2C00CE0008AB2F /* ViewController1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AF5988E1F2C00CE0008AB2F /* ViewController1.swift */; };
 		57EA764A1CF5B06C2E2F00FE /* Pods_Chapman_Football.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09CB8D1FBC67CC49024EF867 /* Pods_Chapman_Football.framework */; };
 		A982247FB426C0A24BB5FCE5 /* Pods_Chapman_FootballTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93615BF5EA23892E19FFA363 /* Pods_Chapman_FootballTests.framework */; };
 		B000BBEB1EDE077E00181A65 /* L2CustomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B000BBEA1EDE077E00181A65 /* L2CustomCollectionViewController.swift */; };
@@ -50,6 +53,9 @@
 
 /* Begin PBXFileReference section */
 		09CB8D1FBC67CC49024EF867 /* Pods_Chapman_Football.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Chapman_Football.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AF5988A1F2BF9020008AB2F /* Section.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Section.swift; sourceTree = "<group>"; };
+		1AF5988C1F2BF9C60008AB2F /* ExpandableHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableHeaderView.swift; sourceTree = "<group>"; };
+		1AF5988E1F2C00CE0008AB2F /* ViewController1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController1.swift; sourceTree = "<group>"; };
 		204896E78578D6001CE8499A /* Pods-Chapman FootballTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chapman FootballTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chapman FootballTests/Pods-Chapman FootballTests.release.xcconfig"; sourceTree = "<group>"; };
 		4ACE99175155BF48F852DCF2 /* Pods-Chapman FootballTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chapman FootballTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Chapman FootballTests/Pods-Chapman FootballTests.debug.xcconfig"; sourceTree = "<group>"; };
 		64773E90D1815D653DC554B9 /* Pods-Chapman FootballUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Chapman FootballUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Chapman FootballUITests/Pods-Chapman FootballUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -147,10 +153,13 @@
 			isa = PBXGroup;
 			children = (
 				B099F19C1ED4A878009EFF1A /* Main.storyboard */,
+				1AF5988A1F2BF9020008AB2F /* Section.swift */,
+				1AF5988C1F2BF9C60008AB2F /* ExpandableHeaderView.swift */,
+				B099F19A1ED4A878009EFF1A /* ViewController.swift */,
+				1AF5988E1F2C00CE0008AB2F /* ViewController1.swift */,
 				B0BC658D1EFD83AF00C62569 /* TabBarViewController.swift */,
 				B0E46C5D1ED75642002E82C3 /* WeekMultiplierDB.swift */,
 				B099F1981ED4A878009EFF1A /* AppDelegate.swift */,
-				B099F19A1ED4A878009EFF1A /* ViewController.swift */,
 				B099F1C61ED4BFF8009EFF1A /* HomepageViewController.swift */,
 				B099F19F1ED4A878009EFF1A /* Assets.xcassets */,
 				B099F1A41ED4A878009EFF1A /* Info.plist */,
@@ -484,12 +493,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B099F19B1ED4A878009EFF1A /* ViewController.swift in Sources */,
+				1AF5988D1F2BF9C60008AB2F /* ExpandableHeaderView.swift in Sources */,
 				B000BBEB1EDE077E00181A65 /* L2CustomCollectionViewController.swift in Sources */,
 				B000BBED1EDE079000181A65 /* U2CustomCollectionViewController.swift in Sources */,
 				B0E46C5C1ED6B566002E82C3 /* L1UINavigationViewController.swift in Sources */,
 				B0BC658E1EFD83AF00C62569 /* TabBarViewController.swift in Sources */,
+				1AF5988F1F2C00CE0008AB2F /* ViewController1.swift in Sources */,
 				B0E46C5E1ED75642002E82C3 /* WeekMultiplierDB.swift in Sources */,
 				B099F1991ED4A878009EFF1A /* AppDelegate.swift in Sources */,
+				1AF5988B1F2BF9020008AB2F /* Section.swift in Sources */,
 				B0614A7C1ED4EE56007B05FA /* L1CustomCollectionViewCell.swift in Sources */,
 				B0614A7D1ED4EE56007B05FA /* L1CustomCollectionViewLayout.swift in Sources */,
 				B05D33A31EDDE5CD00D9DF6D /* U1CustomCollectionViewController.swift in Sources */,

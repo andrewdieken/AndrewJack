@@ -9,8 +9,11 @@
 import UIKit
 import FirebaseDatabase
 
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate{
 
+
+    
+    
     let defaultUsername = UserDefaults.standard
 
     override func viewDidLoad() {
@@ -54,6 +57,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
     func textFieldShouldReturn(_ emailField: UITextField) -> Bool {
         self.view.endEditing(true)
