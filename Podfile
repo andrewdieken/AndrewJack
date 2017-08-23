@@ -6,6 +6,8 @@ target 'Chapman Football' do
   use_frameworks!
   pod ‘Firebase/Core’
   pod ‘Firebase/Database’
+  pod 'IQKeyboardManagerSwift', '4.0.10'
+  pod 'ESTabBarController-swift'
   # Pods for Chapman Football
 
   target 'Chapman FootballTests' do

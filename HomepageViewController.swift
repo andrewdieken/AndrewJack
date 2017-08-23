@@ -38,6 +38,7 @@ class HomepageViewController: UIViewController, UIPickerViewDataSource, UIPicker
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         HomepageViewController.selectedWeek = weeks[row]
+        weekIndex = row
     }
     
     static var staticSquat = 0.0
@@ -47,6 +48,7 @@ class HomepageViewController: UIViewController, UIPickerViewDataSource, UIPicker
     var squat = 0
     var bench = 0
     var clean = 0
+    var weekIndex = 0
     
     func textFieldShouldReturn(_ squatInput: UITextField) -> Bool {
         self.view.endEditing(true)
@@ -91,6 +93,7 @@ class HomepageViewController: UIViewController, UIPickerViewDataSource, UIPicker
         ref?.child(ViewController.staticUsername.username).child("Squat").setValue(HomepageViewController.staticSquat)
         ref?.child(ViewController.staticUsername.username).child("Clean").setValue(HomepageViewController.staticClean)
         ref?.child(ViewController.staticUsername.username).child("Bench").setValue(HomepageViewController.staticBench)
+        ref?.child(ViewController.staticUsername.username).child("Week Index").setValue(weekIndex)
         
     }
     @IBOutlet weak var selectButtonOutlet: UIButton!
@@ -117,8 +120,19 @@ class HomepageViewController: UIViewController, UIPickerViewDataSource, UIPicker
                 self.squatInput.text = String(describing: (tempData["Squat"])!)
                 self.benchInput.text = String(describing: (tempData["Bench"])!)
                 self.cleanInput.text = String(describing: (tempData["Clean"])!)
+                if tempData["Week Index"] != nil {
+                    self.weekIndex = tempData["Week Index"]!
+                }
+                else {
+                    self.weekIndex = 0
+                }
             }
         })
+        print(weekIndex)
+    }
+    
+    override func viewWillLayoutSubviews() {
+        pickerView.selectRow(weekIndex, inComponent: 0, animated: true)
     }
 
     func dismissKeyboard() {
